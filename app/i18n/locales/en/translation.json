@@ -70,5 +70,15 @@
         "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
       }
     ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Technologies and tools I work with",
+    "categories": {
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "tools": "Tools & Methods",
+      "other": "Other Skills"
+    }
   }
 } 

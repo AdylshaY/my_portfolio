@@ -70,5 +70,15 @@
         "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
       }
     ]
+  },
+  "skills": {
+    "title": "Yeteneklerim",
+    "subtitle": "Çalıştığım teknolojiler ve araçlar",
+    "categories": {
+      "frontend": "Frontend Geliştirme",
+      "backend": "Backend Geliştirme",
+      "tools": "Araçlar ve Metodolojiler",
+      "other": "Diğer Yetenekler"
+    }
   }
 } 
