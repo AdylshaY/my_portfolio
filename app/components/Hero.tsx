@@ -9,7 +9,7 @@ export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradients */}
       <div className="absolute inset-0 bg-background">
         {/* Main gradient overlay */}

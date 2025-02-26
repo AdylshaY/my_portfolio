@@ -5,19 +5,27 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { useScrollTo } from '../hooks/useScrollTo';
 import '../i18n/client';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const scrollTo = useScrollTo();
 
   const navItems = [
-    { name: t('nav.home'), href: '/' },
-    { name: t('nav.about'), href: '#about' },
-    { name: t('nav.projects'), href: '#projects' },
-    { name: t('nav.skills'), href: '#skills' },
-    { name: t('nav.contact'), href: '#contact' },
+    { name: t('nav.home'), href: 'home' },
+    { name: t('nav.about'), href: 'about' },
+    { name: t('nav.projects'), href: 'projects' },
+    { name: t('nav.skills'), href: 'skills' },
+    { name: t('nav.contact'), href: 'contact' },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    scrollTo(href);
+    setIsOpen(false);
+  };
 
   return (
     <div className="fixed top-0 w-full z-50">
@@ -49,7 +57,8 @@ export function Navbar() {
               {navItems.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  href={`#${item.href}`}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="text-foreground hover:text-primary transition-colors duration-200 relative group"
                 >
                   {item.name}
@@ -95,9 +104,9 @@ export function Navbar() {
               {navItems.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  href={`#${item.href}`}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>

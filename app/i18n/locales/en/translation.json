@@ -44,5 +44,11 @@
         }
       ]
     }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my significant projects",
+    "viewOnGithub": "View on GitHub",
+    "noImage": "Image not yet added"
   }
 } 

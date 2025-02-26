@@ -44,5 +44,11 @@
         }
       ]
     }
+  },
+  "projects": {
+    "title": "Projelerim",
+    "subtitle": "Geliştirdiğim bazı önemli projeler",
+    "viewOnGithub": "GitHub'da İncele",
+    "noImage": "Görsel henüz eklenmedi"
   }
 } 
