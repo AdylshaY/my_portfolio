@@ -5,14 +5,7 @@ import { SectionContainer } from './shared/SectionContainer';
 import { SectionHeader } from './shared/SectionHeader';
 import { MotionContainer } from './shared/MotionContainer';
 import { ProjectCard } from './shared/ProjectCard';
-
-interface Project {
-  title: string;
-  description: string;
-  image?: string;
-  githubUrl: string;
-  technologies: string[];
-}
+import { Project } from '../data/types';
 
 export function Projects() {
   const { t } = useTranslation();
@@ -21,8 +14,8 @@ export function Projects() {
   const projects = t('projects.list', { returnObjects: true }) as Project[];
 
   return (
-    <SectionContainer id="projects">
-      <MotionContainer className="max-w-6xl mx-auto">
+    <SectionContainer id='projects'>
+      <MotionContainer className='max-w-6xl mx-auto'>
         <SectionHeader
           title={t('projects.title')}
           subtitle={t('projects.subtitle')}

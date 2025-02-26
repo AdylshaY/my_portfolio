@@ -1,12 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
-
-interface SectionContainerProps {
-  id: string;
-  children: ReactNode;
-  className?: string;
-}
+import { SectionContainerProps } from '@/app/data/types';
 
 export function SectionContainer({
   id,

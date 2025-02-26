@@ -5,14 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { motionItem } from './MotionContainer';
-
-interface Project {
-  title: string;
-  description: string;
-  image?: string;
-  githubUrl: string;
-  technologies: string[];
-}
+import { Project } from '../../data/types';
 
 interface ProjectCardProps {
   project: Project;

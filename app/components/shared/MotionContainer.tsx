@@ -1,15 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { MotionContainerProps } from '@/app/data/types';
 
-interface MotionContainerProps {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-}
-
-export function MotionContainer({ children, className = '', delay = 0 }: MotionContainerProps) {
+export function MotionContainer({
+  children,
+  className = '',
+  delay = 0,
+}: MotionContainerProps) {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -24,8 +22,8 @@ export function MotionContainer({ children, className = '', delay = 0 }: MotionC
   return (
     <motion.div
       variants={container}
-      initial="hidden"
-      whileInView="show"
+      initial='hidden'
+      whileInView='show'
       viewport={{ once: true }}
       className={className}
     >
@@ -37,4 +35,4 @@ export function MotionContainer({ children, className = '', delay = 0 }: MotionC
 export const motionItem = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0 },
-}; 
+};

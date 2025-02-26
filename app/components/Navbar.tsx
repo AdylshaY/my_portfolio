@@ -21,48 +21,51 @@ export function Navbar() {
     { name: t('nav.contact'), href: 'contact' },
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     e.preventDefault();
     scrollTo(href);
     setIsOpen(false);
   };
 
   return (
-    <div className="fixed top-0 w-full z-50">
+    <div className='fixed top-0 w-full z-50'>
       {/* Blur Background */}
-      <div className="absolute inset-0 bg-background/30 backdrop-blur-xl" />
-      
+      <div className='absolute inset-0 bg-background/30 backdrop-blur-xl' />
+
       {/* Shadow and Border Overlay */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-primary/5 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+      <div className='absolute inset-0'>
+        <div className='absolute inset-x-0 top-0 h-full bg-gradient-to-b from-primary/5 to-transparent' />
+        <div className='absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent' />
       </div>
-      
-      <nav className="relative">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+
+      <nav className='relative'>
+        <div className='container mx-auto px-4'>
+          <div className='flex items-center justify-between h-16'>
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href='/' className='flex items-center'>
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                className="text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25"
+                className='text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25'
               >
                 AY
               </motion.div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className='hidden md:flex items-center space-x-8'>
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={`#${item.href}`}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="text-foreground hover:text-primary transition-colors duration-200 relative group"
+                  className='text-foreground hover:text-primary transition-colors duration-200 relative group'
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
+                  <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full' />
                 </Link>
               ))}
               <LanguageSwitcher />
@@ -70,11 +73,11 @@ export function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+              className='md:hidden p-2 text-foreground hover:text-primary transition-colors'
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label='Toggle menu'
             >
-              <div className="w-6 h-5 relative flex flex-col justify-between">
+              <div className='w-6 h-5 relative flex flex-col justify-between'>
                 <span
                   className={`w-full h-0.5 bg-current transition-all duration-300 ${
                     isOpen ? 'rotate-45 translate-y-2' : ''
@@ -98,20 +101,20 @@ export function Navbar() {
           <motion.div
             initial={false}
             animate={{ height: isOpen ? 'auto' : 0 }}
-            className="md:hidden overflow-hidden bg-background/50 backdrop-blur-lg rounded-b-lg"
+            className='md:hidden overflow-hidden bg-background/50 backdrop-blur-lg rounded-b-lg'
           >
-            <div className="pb-4 space-y-2">
+            <div className='pb-4 space-y-2'>
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={`#${item.href}`}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200"
+                  className='block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200'
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2 px-4">
+              <div className='pt-2 px-4'>
                 <LanguageSwitcher />
               </div>
             </div>
@@ -120,4 +123,4 @@ export function Navbar() {
       </nav>
     </div>
   );
-} 
+}
