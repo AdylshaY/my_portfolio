@@ -18,24 +18,12 @@ import {
   SiFigma,
   SiJest,
 } from 'react-icons/si';
+import { SectionContainer } from './shared/SectionContainer';
+import { SectionHeader } from './shared/SectionHeader';
+import { MotionContainer, motionItem } from './shared/MotionContainer';
 
 export function Skills() {
   const { t } = useTranslation();
-
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 },
-  };
 
   const skillsByCategory = {
     frontend: [
@@ -63,59 +51,42 @@ export function Skills() {
   };
 
   return (
-    <section id='skills' className='relative py-20 overflow-hidden'>
-      <div className='absolute inset-0 bg-background'>
-        <div className='absolute inset-0 bg-gradient-to-b from-background/95 via-background to-background/95' />
-      </div>
+    <SectionContainer id="skills">
+      <MotionContainer className="max-w-4xl mx-auto">
+        <SectionHeader
+          title={t('skills.title')}
+          subtitle={t('skills.subtitle')}
+        />
 
-      <div className='container px-4 mx-auto relative'>
-        <motion.div
-          variants={container}
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: true }}
-          className='max-w-4xl mx-auto'
-        >
-          {/* Header */}
-          <motion.div variants={item} className='text-center mb-12'>
-            <h2 className='text-3xl font-bold tracking-tight sm:text-4xl mb-4'>
-              {t('skills.title')}
-            </h2>
-            <p className='text-xl text-primary font-medium'>
-              {t('skills.subtitle')}
-            </p>
-          </motion.div>
-
-          {/* Skills Grid */}
-          <div className='grid md:grid-cols-2 gap-6'>
-            {Object.entries(skillsByCategory).map(([category, skills]) => (
-              <motion.div
-                key={category}
-                variants={item}
-                className='p-6 rounded-lg bg-secondary/50 backdrop-blur-sm'
-              >
-                <h3 className='text-xl font-semibold text-primary mb-6'>
-                  {t(`skills.categories.${category}`)}
-                </h3>
-                <div className='grid grid-cols-3 gap-6'>
-                  {skills.map((skill, skillIndex) => (
-                    <motion.div
-                      key={skillIndex}
-                      whileHover={{ scale: 1.05 }}
-                      className='flex flex-col items-center gap-2 text-center'
-                    >
-                      <div className='text-primary transition-colors duration-200 hover:text-primary/80'>
-                        {skill.icon}
-                      </div>
-                      <span className='text-sm font-medium'>{skill.name}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-    </section>
+        {/* Skills Grid */}
+        <div className='grid md:grid-cols-2 gap-6'>
+          {Object.entries(skillsByCategory).map(([category, skills]) => (
+            <motion.div
+              key={category}
+              variants={motionItem}
+              className='p-6 rounded-lg bg-secondary/50 backdrop-blur-sm'
+            >
+              <h3 className='text-xl font-semibold text-primary mb-6'>
+                {t(`skills.categories.${category}`)}
+              </h3>
+              <div className='grid grid-cols-3 gap-6'>
+                {skills.map((skill, skillIndex) => (
+                  <motion.div
+                    key={skillIndex}
+                    whileHover={{ scale: 1.05 }}
+                    className='flex flex-col items-center gap-2 text-center'
+                  >
+                    <div className='text-primary transition-colors duration-200 hover:text-primary/80'>
+                      {skill.icon}
+                    </div>
+                    <span className='text-sm font-medium'>{skill.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </MotionContainer>
+    </SectionContainer>
   );
 }
