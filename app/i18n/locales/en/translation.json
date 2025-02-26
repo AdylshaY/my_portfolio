@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "role": "Full Stack Developer",
+    "description": "A software developer who loves problem-solving, embraces continuous learning, and enjoys exploring new technologies",
+    "cta": {
+      "projects": "View My Projects",
+      "contact": "Get in Touch"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A Passionate Full Stack Developer",
+    "description": {
+      "part1": "I enjoy taking an active role in every stage of software development. I work across a wide spectrum, from frontend to backend, database management to system architecture.",
+      "part2": "I love transforming complex problems into simple and effective solutions. Using my analytical thinking and logical reasoning skills, I strive to find the most optimal solution in every project.",
+      "part3": "To keep up with the rapid changes in the technology world, I continuously improve myself and learn new tools and methodologies."
+    },
+    "keyPoints": {
+      "title": "Key Strengths",
+      "points": [
+        {
+          "title": "Problem Solving",
+          "description": "Analyzing complex problems and producing effective solutions"
+        },
+        {
+          "title": "Continuous Learning",
+          "description": "Passion for discovering new technologies and methodologies"
+        },
+        {
+          "title": "Full Stack Development",
+          "description": "Comprehensive experience in frontend and backend technologies"
+        },
+        {
+          "title": "Analytical Thinking",
+          "description": "Logical approach and systematic problem solving"
+        }
+      ]
+    }
+  }
+} 

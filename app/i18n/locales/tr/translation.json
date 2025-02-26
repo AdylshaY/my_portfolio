@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, Ben",
+    "role": "Full Stack Developer",
+    "description": "Problem çözmeyi seven, sürekli öğrenmeye açık ve yeni teknolojileri keşfetmekten keyif alan bir yazılım geliştiricisi",
+    "cta": {
+      "projects": "Projelerimi Gör",
+      "contact": "İletişime Geç"
+    }
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "Tutkulu bir Full Stack Developer",
+    "description": {
+      "part1": "Yazılım geliştirme sürecinin her aşamasında aktif rol almaktan keyif alıyorum. Frontend'den backend'e, veritabanı yönetiminden sistem mimarisine kadar geniş bir yelpazede çalışmalar yapıyorum.",
+      "part2": "Karmaşık problemleri basit ve etkili çözümlere dönüştürmeyi seviyorum. Analitik düşünme ve mantık yürütme becerilerimi kullanarak her projede en optimum çözümü bulmaya çalışıyorum.",
+      "part3": "Teknoloji dünyasındaki hızlı değişime ayak uydurmak için sürekli kendimi geliştiriyor, yeni araçlar ve metodolojiler öğreniyorum."
+    },
+    "keyPoints": {
+      "title": "Öne Çıkan Özelliklerim",
+      "points": [
+        {
+          "title": "Problem Çözme",
+          "description": "Karmaşık problemleri analiz edip etkili çözümler üretme"
+        },
+        {
+          "title": "Sürekli Öğrenme",
+          "description": "Yeni teknolojileri ve metodolojileri keşfetme tutkusu"
+        },
+        {
+          "title": "Full Stack Geliştirme",
+          "description": "Frontend ve backend teknolojilerinde kapsamlı deneyim"
+        },
+        {
+          "title": "Analitik Düşünme",
+          "description": "Mantıksal yaklaşım ve sistematik problem çözme"
+        }
+      ]
+    }
+  }
+} 
