@@ -82,22 +82,35 @@
 }
 
 @keyframes blob {
-  0% {
+  0%, 100% {
     transform: translate(0px, 0px) scale(1);
   }
   33% {
-    transform: translate(var(--random-x), var(--random-y)) scale(1.1);
+    transform: translate(30px, -50px) scale(1.2);
   }
   66% {
-    transform: translate(calc(var(--random-x) * -0.5), calc(var(--random-y) * -0.5)) scale(0.9);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
+    transform: translate(-20px, 20px) scale(0.8);
   }
 }
 
 .animate-blob {
-  animation: blob 7s infinite;
+  animation: blob 8s ease-in-out infinite;
+}
+
+@keyframes blob2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(0.8);
+  }
+  33% {
+    transform: translate(-30px, -30px) scale(1.2);
+  }
+  66% {
+    transform: translate(20px, 40px) scale(0.9);
+  }
+}
+
+.animate-blob2 {
+  animation: blob2 10s ease-in-out infinite;
 }
 
 @media (prefers-color-scheme: dark) {

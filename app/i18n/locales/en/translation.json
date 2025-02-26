@@ -49,6 +49,26 @@
     "title": "My Projects",
     "subtitle": "Some of my significant projects",
     "viewOnGithub": "View on GitHub",
-    "noImage": "Image not yet added"
+    "noImage": "Image not yet added",
+    "list": [
+      {
+        "title": "Portfolio Website",
+        "description": "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations, responsive design, and internationalization.",
+        "githubUrl": "https://github.com/yourusername/portfolio",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Task Management App",
+        "description": "A full-stack task management application with real-time updates, user authentication, and collaborative features.",
+        "githubUrl": "https://github.com/yourusername/task-manager",
+        "technologies": ["React", "Node.js", "MongoDB", "Socket.IO"]
+      },
+      {
+        "title": "E-commerce Platform",
+        "description": "A complete e-commerce solution with product management, shopping cart, and secure payment integration.",
+        "githubUrl": "https://github.com/yourusername/ecommerce",
+        "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
+      }
+    ]
   }
 } 

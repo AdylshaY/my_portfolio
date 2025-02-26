@@ -47,8 +47,28 @@
   },
   "projects": {
     "title": "Projelerim",
-    "subtitle": "Geliştirdiğim bazı önemli projeler",
-    "viewOnGithub": "GitHub'da İncele",
-    "noImage": "Görsel henüz eklenmedi"
+    "subtitle": "Öne çıkan projelerimden bazıları",
+    "viewOnGithub": "GitHub'da Görüntüle",
+    "noImage": "Henüz görsel eklenmedi",
+    "list": [
+      {
+        "title": "Portfolyo Web Sitesi",
+        "description": "Next.js, TypeScript ve Tailwind CSS ile geliştirilmiş modern bir portfolyo web sitesi. Akıcı animasyonlar, responsive tasarım ve çoklu dil desteği içerir.",
+        "githubUrl": "https://github.com/yourusername/portfolio",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Görev Yönetim Uygulaması",
+        "description": "Gerçek zamanlı güncellemeler, kullanıcı kimlik doğrulama ve işbirliği özellikleri içeren tam kapsamlı bir görev yönetim uygulaması.",
+        "githubUrl": "https://github.com/yourusername/task-manager",
+        "technologies": ["React", "Node.js", "MongoDB", "Socket.IO"]
+      },
+      {
+        "title": "E-ticaret Platformu",
+        "description": "Ürün yönetimi, alışveriş sepeti ve güvenli ödeme entegrasyonu içeren eksiksiz bir e-ticaret çözümü.",
+        "githubUrl": "https://github.com/yourusername/ecommerce",
+        "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
+      }
+    ]
   }
 } 

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 
 interface Project {
   title: string;
@@ -32,52 +31,8 @@ export function Projects() {
     show: { opacity: 1, y: 0 },
   };
 
-  // Sample project data - you can replace this with your own projects
-  const projects: Project[] = [
-    {
-      title: 'Sample Project',
-      description:
-        'This is a sample project description. Replace this with your actual project details.',
-      githubUrl: 'https://github.com/yourusername/project',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    },
-    {
-      title: 'Sample Project',
-      description:
-        'This is a sample project description. Replace this with your actual project details.',
-      githubUrl: 'https://github.com/yourusername/project',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    },
-    {
-      title: 'Sample Project',
-      description:
-        'This is a sample project description. Replace this with your actual project details.',
-      githubUrl: 'https://github.com/yourusername/project',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    },
-  ];
-
-  // State for random positions
-  const [randomPositions, setRandomPositions] = useState<Array<{
-    blob1: { x: number; y: number };
-    blob2: { x: number; y: number };
-  }>>([]);
-
-  // Function to generate random position values
-  const getRandomPosition = () => {
-    const randomX = Math.floor(Math.random() * 100) - 50; // -50 to 50
-    const randomY = Math.floor(Math.random() * 100) - 50; // -50 to 50
-    return { x: randomX, y: randomY };
-  };
-
-  // Generate random positions on client-side only
-  useEffect(() => {
-    const positions = projects.map(() => ({
-      blob1: getRandomPosition(),
-      blob2: getRandomPosition(),
-    }));
-    setRandomPositions(positions);
-  }, []);
+  // Get projects from translations
+  const projects = t('projects.list', { returnObjects: true }) as Project[];
 
   return (
     <section id='projects' className='relative py-20 overflow-hidden'>
@@ -109,7 +64,7 @@ export function Projects() {
               <motion.div
                 key={index}
                 variants={item}
-                className='group relative bg-secondary/50 backdrop-blur-sm rounded-lg overflow-hidden'
+                className='group relative bg-secondary/50 backdrop-blur-sm rounded-lg overflow-hidden flex flex-col'
               >
                 {/* Project Image or Placeholder */}
                 <div className='relative h-48 overflow-hidden'>
@@ -127,28 +82,8 @@ export function Projects() {
                     <div className='absolute inset-0 bg-primary/5 flex items-center justify-center'>
                       {/* Animated background blobs */}
                       <div className='absolute inset-0 overflow-hidden'>
-                        <div
-                          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary/10 rounded-full filter blur-2xl animate-blob'
-                          style={
-                            randomPositions[index]
-                              ? {
-                                  '--random-x': `${randomPositions[index].blob1.x}px`,
-                                  '--random-y': `${randomPositions[index].blob1.y}px`,
-                                } as React.CSSProperties
-                              : {}
-                          }
-                        />
-                        <div
-                          className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-indigo-600/10 rounded-full filter blur-2xl animate-blob animation-delay-2000'
-                          style={
-                            randomPositions[index]
-                              ? {
-                                  '--random-x': `${randomPositions[index].blob2.x}px`,
-                                  '--random-y': `${randomPositions[index].blob2.y}px`,
-                                } as React.CSSProperties
-                              : {}
-                          }
-                        />
+                        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/20 rounded-full filter blur-3xl animate-blob' />
+                        <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-indigo-600/20 rounded-full filter blur-3xl animate-blob2' />
                       </div>
                       {/* Placeholder text */}
                       <span className='text-muted-foreground/50 text-sm font-medium relative'>
@@ -160,24 +95,26 @@ export function Projects() {
                 </div>
 
                 {/* Project Content */}
-                <div className='p-6'>
-                  <h3 className='text-xl font-semibold mb-2'>
-                    {project.title}
-                  </h3>
-                  <p className='text-muted-foreground mb-4'>
-                    {project.description}
-                  </p>
+                <div className='p-6 flex flex-col flex-1'>
+                  <div className='flex-1'>
+                    <h3 className='text-xl font-semibold mb-2 text-justify'>
+                      {project.title}
+                    </h3>
+                    <p className='text-muted-foreground mb-4 text-justify line-clamp-3'>
+                      {project.description}
+                    </p>
 
-                  {/* Technologies */}
-                  <div className='flex flex-wrap gap-2 mb-4'>
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className='px-2 py-1 text-xs rounded-full bg-primary/10 text-primary'
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                    {/* Technologies */}
+                    <div className='flex flex-wrap gap-2 mb-4'>
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className='px-2 py-1 text-xs rounded-full bg-primary/10 text-primary'
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   {/* GitHub Button */}
