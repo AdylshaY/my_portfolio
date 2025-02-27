@@ -27,20 +27,28 @@
       "title": "Key Strengths",
       "points": [
         {
-          "title": "Problem Solving",
-          "description": "Analyzing complex problems and producing effective solutions"
+          "title": "Problem Solver",
+          "description": "I enjoy finding solutions to complex problems. Each challenge presents a new opportunity to learn."
         },
         {
-          "title": "Continuous Learning",
-          "description": "Passion for discovering new technologies and methodologies"
+          "title": "Continuous Learner",
+          "description": "Technology is constantly evolving, and I love evolving with it. Learning new things is a passion for me."
         },
         {
-          "title": "Full Stack Development",
-          "description": "Comprehensive experience in frontend and backend technologies"
+          "title": "Full-Stack Developer",
+          "description": "I have experience in both frontend and backend areas. This gives me a holistic approach to my projects."
         },
         {
-          "title": "Analytical Thinking",
-          "description": "Logical approach and systematic problem solving"
+          "title": "Diverse Technology Spectrum",
+          "description": "I have experience in various technologies including React.js, Next.js, C#, ASP.NET Core, .NET Framework, Web API, NodeJS, T-SQL, Docker, ASP.NET MVC, and Flutter."
+        },
+        {
+          "title": "Multifaceted Perspective",
+          "description": "I approach problems from different angles, emphasizing the development of unconventional and creative solutions."
+        },
+        {
+          "title": "Adaptable Thinker",
+          "description": "I thrive in dynamic environments and can quickly adjust my strategies to meet changing requirements. This flexibility allows me to tackle unexpected challenges effectively."
         }
       ]
     }
@@ -55,7 +63,12 @@
         "title": "Portfolio Website",
         "description": "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations, responsive design, and internationalization.",
         "githubUrl": "https://github.com/yourusername/portfolio",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "Task Management App",
@@ -81,4 +94,4 @@
       "other": "Other Skills"
     }
   }
-} 
+}

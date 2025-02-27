@@ -27,20 +27,28 @@
       "title": "Öne Çıkan Özelliklerim",
       "points": [
         {
-          "title": "Problem Çözme",
-          "description": "Karmaşık problemleri analiz edip etkili çözümler üretme"
+          "title": "Problem Çözücü",
+          "description": "Karmaşık problemlere çözüm bulmaktan keyif alıyorum. Her zorluk, yeni bir öğrenme fırsatı sunuyor."
         },
         {
-          "title": "Sürekli Öğrenme",
-          "description": "Yeni teknolojileri ve metodolojileri keşfetme tutkusu"
+          "title": "Sürekli Öğrenen",
+          "description": "Teknoloji sürekli gelişiyor ve ben de onunla birlikte gelişmeyi seviyorum. Yeni şeyler öğrenmek benim için bir tutku."
         },
         {
-          "title": "Full Stack Geliştirme",
-          "description": "Frontend ve backend teknolojilerinde kapsamlı deneyim"
+          "title": "Full-Stack Geliştirici",
+          "description": "Hem frontend hem de backend alanlarında tecrübeye sahibim. Bu, projelerime bütünsel bir yaklaşım getirmemi sağlıyor."
         },
         {
-          "title": "Analitik Düşünme",
-          "description": "Mantıksal yaklaşım ve sistematik problem çözme"
+          "title": "Çeşitli Teknoloji Yelpazesi",
+          "description": "React.js, Next.js, C#, ASP.NET Core, .NET Framework, Web API, NodeJS, T-SQL, Docker, ASP.NET MVC ve Flutter gibi çeşitli teknolojilerde deneyime sahibim."
+        },
+        {
+          "title": "Çok Yönlü Bakış Açısı",
+          "description": "Sorunlara farklı açılardan yaklaşarak, alışılmışın dışında ve yaratıcı çözümler geliştirmeyi önemsiyorum."
+        },
+        {
+          "title": "Uyum Sağlayan",
+          "description": "Dinamik ortamlarda başarılı bir şekilde çalışıyor ve değişen gereksinimlere hızla uyum sağlıyorum. Bu esneklik, beklenmedik zorluklarla etkili bir şekilde başa çıkmamı sağlıyor."
         }
       ]
     }
@@ -55,7 +63,12 @@
         "title": "Portfolyo Web Sitesi",
         "description": "Next.js, TypeScript ve Tailwind CSS ile geliştirilmiş modern bir portfolyo web sitesi. Akıcı animasyonlar, responsive tasarım ve çoklu dil desteği içerir.",
         "githubUrl": "https://github.com/yourusername/portfolio",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "Görev Yönetim Uygulaması",
@@ -81,4 +94,4 @@
       "other": "Diğer Yetenekler"
     }
   }
-} 
+}

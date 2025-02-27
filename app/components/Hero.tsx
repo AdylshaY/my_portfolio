@@ -6,15 +6,44 @@ import { useTranslation } from 'react-i18next';
 import '../i18n/client';
 import { SectionContainer } from './shared/SectionContainer';
 import { HeroBackground } from './shared/HeroBackground';
+import { useScrollTo } from '../hooks/useScrollTo';
 
-export function Hero() {
+export const Hero = () => {
   const { t } = useTranslation();
+  const scrollTo = useScrollTo();
+
+  const handleProjectsClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    scrollTo('projects');
+  };
+
+  const handleKeyProjectsNavigation = (
+    e: React.KeyboardEvent<HTMLButtonElement>
+  ) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollTo('projects');
+    }
+  };
+
+  const handleContactClick = () => {
+    scrollTo('contact');
+  };
+
+  const handleKeyContactNavigation = (
+    e: React.KeyboardEvent<HTMLButtonElement>
+  ) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollTo('contact');
+    }
+  };
 
   return (
     <div className='relative h-screen'>
       <SectionContainer
         id='home'
-        className='h-full flex items-center justify-center !py-0'
+        className='h-full flex items-center justify-center'
       >
         <HeroBackground />
 
@@ -41,10 +70,22 @@ export function Hero() {
               </p>
 
               <div className='flex flex-wrap gap-4 justify-center lg:justify-start'>
-                <button className='px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition'>
+                <button
+                  className='px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition backdrop-blur-sm'
+                  onClick={handleProjectsClick}
+                  onKeyDown={handleKeyProjectsNavigation}
+                  aria-label={t('hero.cta.projects')}
+                  tabIndex={0}
+                >
                   {t('hero.cta.projects')}
                 </button>
-                <button className='px-6 py-3 rounded-full border border-input bg-background/50 backdrop-blur-sm hover:bg-accent hover:text-accent-foreground transition'>
+                <button
+                  className='px-6 py-3 rounded-full border border-input bg-background/50 backdrop-blur-sm hover:bg-accent hover:text-accent-foreground transition'
+                  onClick={handleContactClick}
+                  onKeyDown={handleKeyContactNavigation}
+                  aria-label={t('hero.cta.contact')}
+                  tabIndex={0}
+                >
                   {t('hero.cta.contact')}
                 </button>
               </div>
@@ -80,10 +121,11 @@ export function Hero() {
           strokeWidth='2'
           viewBox='0 0 24 24'
           stroke='currentColor'
+          aria-hidden='true'
         >
           <path d='M19 14l-7 7m0 0l-7-7m7 7V3'></path>
         </svg>
       </div>
     </div>
   );
-}
+};

@@ -8,12 +8,17 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 import { useScrollTo } from '../hooks/useScrollTo';
 import '../i18n/client';
 
-export function Navbar() {
+type NavItem = {
+  name: string;
+  href: string;
+};
+
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const scrollTo = useScrollTo();
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { name: t('nav.home'), href: 'home' },
     { name: t('nav.about'), href: 'about' },
     { name: t('nav.projects'), href: 'projects' },
@@ -30,6 +35,28 @@ export function Navbar() {
     setIsOpen(false);
   };
 
+  const handleKeyNavigation = (
+    e: React.KeyboardEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollTo(href);
+      setIsOpen(false);
+    }
+  };
+
+  const handleToggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleKeyToggleMenu = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setIsOpen(!isOpen);
+    }
+  };
+
   return (
     <div className='fixed top-0 w-full z-50'>
       {/* Blur Background */}
@@ -41,11 +68,16 @@ export function Navbar() {
         <div className='absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent' />
       </div>
 
-      <nav className='relative'>
+      <nav className='relative' aria-label='Main Navigation'>
         <div className='container mx-auto px-4'>
           <div className='flex items-center justify-between h-16'>
             {/* Logo */}
-            <Link href='/' className='flex items-center'>
+            <Link
+              href='/'
+              className='flex items-center'
+              aria-label='Homepage'
+              tabIndex={0}
+            >
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -56,13 +88,19 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className='hidden md:flex items-center space-x-8'>
+            <div
+              className='hidden md:flex items-center space-x-8'
+              role='navigation'
+            >
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={`#${item.href}`}
                   onClick={(e) => handleNavClick(e, item.href)}
+                  onKeyDown={(e) => handleKeyNavigation(e, item.href)}
                   className='text-foreground hover:text-primary transition-colors duration-200 relative group'
+                  tabIndex={0}
+                  aria-label={item.name}
                 >
                   {item.name}
                   <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full' />
@@ -74,8 +112,11 @@ export function Navbar() {
             {/* Mobile Menu Button */}
             <button
               className='md:hidden p-2 text-foreground hover:text-primary transition-colors'
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={handleToggleMenu}
+              onKeyDown={handleKeyToggleMenu}
               aria-label='Toggle menu'
+              aria-expanded={isOpen}
+              tabIndex={0}
             >
               <div className='w-6 h-5 relative flex flex-col justify-between'>
                 <span
@@ -102,6 +143,7 @@ export function Navbar() {
             initial={false}
             animate={{ height: isOpen ? 'auto' : 0 }}
             className='md:hidden overflow-hidden bg-background/50 backdrop-blur-lg rounded-b-lg'
+            role={isOpen ? 'menu' : undefined}
           >
             <div className='pb-4 space-y-2'>
               {navItems.map((item) => (
@@ -109,7 +151,10 @@ export function Navbar() {
                   key={item.name}
                   href={`#${item.href}`}
                   onClick={(e) => handleNavClick(e, item.href)}
+                  onKeyDown={(e) => handleKeyNavigation(e, item.href)}
                   className='block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200'
+                  tabIndex={isOpen ? 0 : -1}
+                  aria-label={item.name}
                 >
                   {item.name}
                 </Link>
@@ -123,4 +168,4 @@ export function Navbar() {
       </nav>
     </div>
   );
-}
+};

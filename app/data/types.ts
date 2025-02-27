@@ -30,3 +30,9 @@ export interface MotionContainerProps {
   className?: string;
   delay?: number;
 }
+
+export interface BentoGridProps {
+  title: string;
+  items: KeyPoint[];
+  className?: string;
+}

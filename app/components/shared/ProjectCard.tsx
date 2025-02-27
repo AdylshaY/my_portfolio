@@ -11,8 +11,15 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
   const { t } = useTranslation();
+
+  const handleKeyboardNavigation = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      window.open(project.githubUrl, '_blank', 'noopener noreferrer');
+    }
+  };
 
   return (
     <motion.div
@@ -76,6 +83,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
           target='_blank'
           rel='noopener noreferrer'
           className='inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors'
+          aria-label={`${t('projects.viewOnGithub')}: ${project.title}`}
+          tabIndex={0}
+          onKeyDown={handleKeyboardNavigation}
         >
           <svg
             className='w-5 h-5'

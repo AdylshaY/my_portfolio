@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 import { MotionContainerProps } from '@/app/data/types';
 
-export function MotionContainer({
+export const MotionContainer = ({
   children,
   className = '',
   delay = 0,
-}: MotionContainerProps) {
+}: MotionContainerProps) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -26,11 +26,12 @@ export function MotionContainer({
       whileInView='show'
       viewport={{ once: true }}
       className={className}
+      role='region'
     >
       {children}
     </motion.div>
   );
-}
+};
 
 export const motionItem = {
   hidden: { opacity: 0, y: 20 },
