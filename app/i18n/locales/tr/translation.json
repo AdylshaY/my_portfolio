@@ -51,6 +51,33 @@
           "description": "Dinamik ortamlarda başarılı bir şekilde çalışıyor ve değişen gereksinimlere hızla uyum sağlıyorum. Bu esneklik, beklenmedik zorluklarla etkili bir şekilde başa çıkmamı sağlıyor."
         }
       ]
+    },
+    "workExperience": {
+      "title": "İş Tecrübem",
+      "subtitle": "Profesyonel kariyerimde edindiğim deneyimler",
+      "experiences": [
+        {
+          "company": "Gelecek Varlık Yönetimi ",
+          "position": "Junior Full Stack Developer",
+          "period": "2022 - Günümüz",
+          "description": "Şirket içerisinde kullanılan uygulamaların geliştirilmesi ve bakımından sorumluyum. Farklı teknolojiler kullanarak projeler geliştiriyorum. Geliştirmeler sırasında gerekli durumlarda veritabanı sorgularını yazıyorum.",
+          "technologies": [
+            "React",
+            "ASP.NET Core",
+            "SQL Server",
+            "T-SQL",
+            "WEB API",
+            "MongoDB"
+          ]
+        },
+        {
+          "company": "Gelecek Varlık Yönetimi - Patika",
+          "position": "Bootcamp Öğrencisi",
+          "period": "2022 - 2022",
+          "description": "Patika.dev platformunda verilen eğitimleri tamamladım ve bu süreçte yazılım geliştirme alanında temelleri öğrendim. Sonrasında mülakatları geçerek Gelecek Varlık Yönetimi'nde Junior Full Stack Developer olarak işe başladım.",
+          "technologies": ["ASP.NET Core", "SQL Server", "React", "Node.js", "MongoDB"]
+        }
+      ]
     }
   },
   "projects": {

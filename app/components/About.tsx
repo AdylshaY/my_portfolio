@@ -6,7 +6,8 @@ import { SectionContainer } from './shared/SectionContainer';
 import { SectionHeader } from './shared/SectionHeader';
 import { MotionContainer, motionItem } from './shared/MotionContainer';
 import { BentoGrid } from './shared/BentoGrid';
-import { KeyPoint } from '../data/types';
+import { KeyPoint, WorkExperience } from '../data/types';
+import { WorkExperienceTimeline } from './shared/WorkExperienceTimeline';
 
 export const About = () => {
   const { t } = useTranslation();
@@ -32,7 +33,20 @@ export const About = () => {
         {/* Key Points using BentoGrid component with i18n */}
         <BentoGrid
           title={t('about.keyPoints.title')}
-          items={t('about.keyPoints.points', { returnObjects: true }) as KeyPoint[]}
+          items={
+            t('about.keyPoints.points', { returnObjects: true }) as KeyPoint[]
+          }
+        />
+
+        {/* Work Experience Timeline */}
+        <WorkExperienceTimeline
+          title={t('about.workExperience.title')}
+          subtitle={t('about.workExperience.subtitle')}
+          experiences={
+            t('about.workExperience.experiences', {
+              returnObjects: true,
+            }) as WorkExperience[]
+          }
         />
       </MotionContainer>
     </SectionContainer>

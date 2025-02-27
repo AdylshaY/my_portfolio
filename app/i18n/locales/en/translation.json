@@ -51,6 +51,39 @@
           "description": "I thrive in dynamic environments and can quickly adjust my strategies to meet changing requirements. This flexibility allows me to tackle unexpected challenges effectively."
         }
       ]
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "subtitle": "Professional experiences throughout my career",
+      "experiences": [
+        {
+          "company": "Gelecek Varlık Yönetimi",
+          "position": "Junior Full Stack Developer",
+          "period": "2022 - Present",
+          "description": "I am responsible for the development and maintenance of applications used within the company. I develop projects using various technologies. When necessary, I write database queries during the development process.",
+          "technologies": [
+            "React",
+            "ASP.NET Core",
+            "SQL Server",
+            "T-SQL",
+            "WEB API",
+            "MongoDB"
+          ]
+        },
+        {
+          "company": "Gelecek Varlık Yönetimi - Patika",
+          "position": "Bootcamp Student",
+          "period": "2022 - 2022",
+          "description": "I completed the training provided on the Patika.dev platform and learned the fundamentals of software development during this process. After passing the interviews, I started working as a Junior Full Stack Developer at Future Asset Management.",
+          "technologies": [
+            "ASP.NET Core",
+            "SQL Server",
+            "React",
+            "Node.js",
+            "MongoDB"
+          ]
+        }
+      ]
     }
   },
   "projects": {

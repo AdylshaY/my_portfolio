@@ -13,6 +13,15 @@ export interface KeyPoint {
   description: string;
 }
 
+export interface WorkExperience {
+  company: string;
+  position: string;
+  period: string;
+  description: string;
+  technologies?: string[];
+  logo?: string;
+}
+
 export interface SectionContainerProps {
   id: string;
   children: ReactNode;
