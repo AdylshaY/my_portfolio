@@ -38,4 +38,4 @@ export const skillsByCategory = {
     { name: 'UI/UX Design', icon: SiFigma },
     { name: 'Testing', icon: SiJest },
   ],
-}; 
+};

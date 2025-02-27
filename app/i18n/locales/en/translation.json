@@ -126,5 +126,13 @@
       "tools": "Tools & Methods",
       "other": "Other Skills"
     }
+  },
+  "footer": {
+    "about": "About Me",
+    "description": "A passionate Full Stack Developer focused on creating elegant solutions to complex problems.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect With Me",
+    "contactEmail": "Email",
+    "copyright": "All Rights Reserved"
   }
 }

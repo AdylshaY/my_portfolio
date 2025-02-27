@@ -120,5 +120,13 @@
       "tools": "Araçlar ve Metodolojiler",
       "other": "Diğer Yetenekler"
     }
+  },
+  "footer": {
+    "about": "Hakkımda",
+    "description": "Karmaşık problemlere zarif çözümler üretmeye odaklanan tutkulu bir Full Stack Developer.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "connect": "Benimle İletişime Geç",
+    "contactEmail": "E-posta",
+    "copyright": "Tüm Hakları Saklıdır"
   }
 }

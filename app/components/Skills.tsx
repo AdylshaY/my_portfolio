@@ -11,8 +11,8 @@ export function Skills() {
   const { t } = useTranslation();
 
   return (
-    <SectionContainer id="skills">
-      <MotionContainer className="max-w-4xl mx-auto">
+    <SectionContainer id='skills'>
+      <MotionContainer className='max-w-4xl mx-auto'>
         <SectionHeader
           title={t('skills.title')}
           subtitle={t('skills.subtitle')}
