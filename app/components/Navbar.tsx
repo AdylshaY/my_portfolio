@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +17,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const scrollTo = useScrollTo();
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   const navItems: NavItem[] = [
     { name: t('nav.home'), href: 'home' },
@@ -25,6 +26,23 @@ export const Navbar = () => {
     { name: t('nav.skills'), href: 'skills' },
     { name: t('nav.contact'), href: 'contact' },
   ];
+
+  // Close navbar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -58,7 +76,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className='fixed top-0 w-full z-50'>
+    <div className='fixed top-0 w-full z-50' ref={navbarRef}>
       {/* Blur Background */}
       <div className='absolute inset-0 bg-background/30 backdrop-blur-xl' />
 
@@ -160,7 +178,7 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className='pt-2 px-4'>
-                <LanguageSwitcher />
+                <LanguageSwitcher isMobile={true} closeNavbar={() => setIsOpen(false)} />
               </div>
             </div>
           </motion.div>

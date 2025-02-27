@@ -50,8 +50,9 @@ export const WorkExperienceTimeline = ({
             } md:w-[calc(50%-2.5rem)] z-10`}
             role='listitem'
           >
+            {/* Timeline dot */}
             <div
-              className={`absolute transform z-20 ${
+              className={`hidden md:block absolute transform z-20 ${
                 index % 2 === 0 ? '-left-2' : '-right-2'
               }`}
             >
