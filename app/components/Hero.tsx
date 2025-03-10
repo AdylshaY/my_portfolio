@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import '../i18n/client';
 import { SectionContainer } from './shared/SectionContainer';
 import { HeroBackground } from './shared/HeroBackground';
 import { useScrollTo } from '../hooks/useScrollTo';

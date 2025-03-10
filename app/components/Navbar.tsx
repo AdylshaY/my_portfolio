@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { useScrollTo } from '../hooks/useScrollTo';
-import '../i18n/client';
 
 type NavItem = {
   name: string;

@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import '../i18n/client';
 
 type Language = 'tr' | 'en';
 

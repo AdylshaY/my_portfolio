@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import './i18n/client';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -65,6 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <meta name="color-scheme" content="dark" />
+        <meta name="color-profile" content="sRGB" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
