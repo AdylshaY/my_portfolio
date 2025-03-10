@@ -51,14 +51,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
-        href: '/favicon.svg',
+        url: '/favicon.ico',
+        href: '/favicon.ico',
       },
     ],
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
   },
 };
 
