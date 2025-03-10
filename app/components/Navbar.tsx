@@ -27,10 +27,12 @@ export const Navbar = () => {
     { name: t('nav.contact'), href: 'contact' },
   ];
 
-  // Close navbar when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -38,7 +40,7 @@ export const Navbar = () => {
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
-    
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -49,8 +51,10 @@ export const Navbar = () => {
     href: string
   ) => {
     e.preventDefault();
-    scrollTo(href);
     setIsOpen(false);
+    setTimeout(() => {
+      scrollTo(href);
+    }, 100);
   };
 
   const handleKeyNavigation = (
@@ -59,8 +63,10 @@ export const Navbar = () => {
   ) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      scrollTo(href);
       setIsOpen(false);
+      setTimeout(() => {
+        scrollTo(href);
+      }, 100);
     }
   };
 
@@ -178,7 +184,10 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className='pt-2 px-4'>
-                <LanguageSwitcher isMobile={true} closeNavbar={() => setIsOpen(false)} />
+                <LanguageSwitcher
+                  isMobile={true}
+                  closeNavbar={() => setIsOpen(false)}
+                />
               </div>
             </div>
           </motion.div>
