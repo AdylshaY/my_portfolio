@@ -102,6 +102,7 @@
         "title": "Dall-E Clone",
         "description": "An AI image generation application inspired by OpenAI's DALL-E. Users can create and share AI-generated images based on text prompts using the MERN stack.",
         "githubUrl": "https://github.com/AdylshaY/dalle-clone",
+        "image": "/dalle-clone.png",
         "technologies": [
           "React",
           "Tailwind CSS",
@@ -123,6 +124,26 @@
           "Prisma",
           "MongoDB"
         ]
+      },
+      {
+        "title": "Twitter Clone",
+        "description": "A modern clone of Twitter. Users can post tweets, follow other users, and interact with content. A full-featured social media application built with Next.js and TypeScript.",
+        "githubUrl": "https://github.com/AdylshaY/nextjs-twitter-clone",
+        "image": "/twitter-image.png",
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Zustand",
+          "NextAuth",
+          "TypeScript"
+        ]
+      },
+      {
+        "title": "AI Prompt App",
+        "description": "A platform where users can create and share AI prompts. Users can save their own prompts, discover prompts from others, and engage with the community. Built with Next.js and modern authentication methods.",
+        "githubUrl": "https://github.com/AdylshaY/ai-prompt-app",
+        "image": "/prompt-app.png",
+        "technologies": ["Next.js", "Tailwind CSS", "Bcrypt", "NextAuth"]
       }
     ]
   },
