@@ -75,7 +75,13 @@
           "position": "Bootcamp Öğrencisi",
           "period": "2022 - 2022",
           "description": "Patika.dev platformunda verilen eğitimleri tamamladım ve bu süreçte yazılım geliştirme alanında temelleri öğrendim. Sonrasında mülakatları geçerek Gelecek Varlık Yönetimi'nde Junior Full Stack Developer olarak işe başladım.",
-          "technologies": ["ASP.NET Core", "SQL Server", "React", "Node.js", "MongoDB"]
+          "technologies": [
+            "ASP.NET Core",
+            "SQL Server",
+            "React",
+            "Node.js",
+            "MongoDB"
+          ]
         }
       ]
     }
@@ -87,27 +93,36 @@
     "noImage": "Henüz görsel eklenmedi",
     "list": [
       {
-        "title": "Portfolyo Web Sitesi",
-        "description": "Next.js, TypeScript ve Tailwind CSS ile geliştirilmiş modern bir portfolyo web sitesi. Akıcı animasyonlar, responsive tasarım ve çoklu dil desteği içerir.",
-        "githubUrl": "https://github.com/yourusername/portfolio",
+        "title": "Ajans Web Sitesi",
+        "description": "Next.js ile geliştirilmiş modern bir ajans web sitesi. Responsive tasarım, akıcı animasyonlar ve hizmetleri sergilemek için temiz bir kullanıcı arayüzü içerir.",
+        "githubUrl": "https://github.com/AdylshaY/NextJS-Agency-App",
+        "technologies": ["Next.js", "React"]
+      },
+      {
+        "title": "Dall-E Klonu",
+        "description": "OpenAI'ın DALL-E'sinden esinlenen bir yapay zeka görsel oluşturma uygulaması. Kullanıcılar MERN stack kullanarak metin komutlarına dayalı yapay zeka tarafından oluşturulan görselleri oluşturabilir ve paylaşabilir.",
+        "githubUrl": "https://github.com/AdylshaY/dalle-clone",
         "technologies": [
-          "Next.js",
-          "TypeScript",
+          "React",
           "Tailwind CSS",
-          "Framer Motion"
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "OpenAI API"
         ]
       },
       {
-        "title": "Görev Yönetim Uygulaması",
-        "description": "Gerçek zamanlı güncellemeler, kullanıcı kimlik doğrulama ve işbirliği özellikleri içeren tam kapsamlı bir görev yönetim uygulaması.",
-        "githubUrl": "https://github.com/yourusername/task-manager",
-        "technologies": ["React", "Node.js", "MongoDB", "Socket.IO"]
-      },
-      {
-        "title": "E-ticaret Platformu",
-        "description": "Ürün yönetimi, alışveriş sepeti ve güvenli ödeme entegrasyonu içeren eksiksiz bir e-ticaret çözümü.",
-        "githubUrl": "https://github.com/yourusername/ecommerce",
-        "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
+        "title": "Airbnb Klonu",
+        "description": "Airbnb web sitesinin bir klonu. Kullanıcılar mülkleri arayabilir, detayları görüntüleyebilir ve konaklama rezervasyonu yapabilir.",
+        "githubUrl": "https://github.com/AdylshaY/nextjs-airbnb-clone",
+        "image": "/airbnb-clone.png",
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Zustand",
+          "Prisma",
+          "MongoDB"
+        ]
       }
     ]
   },

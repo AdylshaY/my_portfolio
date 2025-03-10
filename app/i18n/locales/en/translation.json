@@ -93,27 +93,36 @@
     "noImage": "Image not yet added",
     "list": [
       {
-        "title": "Portfolio Website",
-        "description": "A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations, responsive design, and internationalization.",
-        "githubUrl": "https://github.com/yourusername/portfolio",
+        "title": "Agency Website",
+        "description": "A modern agency website built with Next.js. Features responsive design, smooth animations, and a clean UI for showcasing services and portfolio items.",
+        "githubUrl": "https://github.com/AdylshaY/NextJS-Agency-App",
+        "technologies": ["Next.js", "React"]
+      },
+      {
+        "title": "Dall-E Clone",
+        "description": "An AI image generation application inspired by OpenAI's DALL-E. Users can create and share AI-generated images based on text prompts using the MERN stack.",
+        "githubUrl": "https://github.com/AdylshaY/dalle-clone",
         "technologies": [
-          "Next.js",
-          "TypeScript",
+          "React",
           "Tailwind CSS",
-          "Framer Motion"
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "OpenAI API"
         ]
       },
       {
-        "title": "Task Management App",
-        "description": "A full-stack task management application with real-time updates, user authentication, and collaborative features.",
-        "githubUrl": "https://github.com/yourusername/task-manager",
-        "technologies": ["React", "Node.js", "MongoDB", "Socket.IO"]
-      },
-      {
-        "title": "E-commerce Platform",
-        "description": "A complete e-commerce solution with product management, shopping cart, and secure payment integration.",
-        "githubUrl": "https://github.com/yourusername/ecommerce",
-        "technologies": ["React", "Express", "PostgreSQL", "Stripe"]
+        "title": "Airbnb Clone",
+        "description": "A clone of Airbnb's website. Users can search for properties, view details, and book accommodations.",
+        "githubUrl": "https://github.com/AdylshaY/nextjs-airbnb-clone",
+        "image": "/airbnb-clone.png",
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Zustand",
+          "Prisma",
+          "MongoDB"
+        ]
       }
     ]
   },

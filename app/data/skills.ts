@@ -12,8 +12,15 @@ import {
   SiDocker,
   SiJenkins,
   SiFigma,
-  SiJest,
+  SiJquery,
+  SiDotnet,
+  SiBootstrap,
+  SiMui,
+  SiFlutter,
+  SiAdobe,
+  SiYoutube,
 } from 'react-icons/si';
+import { TbSql } from 'react-icons/tb';
 
 export const skillsByCategory = {
   frontend: [
@@ -22,12 +29,18 @@ export const skillsByCategory = {
     { name: 'TypeScript', icon: SiTypescript },
     { name: 'Tailwind CSS', icon: SiTailwindcss },
     { name: 'HTML/CSS', icon: SiHtml5 },
+    { name: 'jQuery', icon: SiJquery },
+    { name: 'Bootstrap', icon: SiBootstrap },
+    { name: 'Material UI', icon: SiMui },
+    { name: 'Flutter', icon: SiFlutter },
   ],
   backend: [
     { name: 'Node.js', icon: SiNodedotjs },
     { name: 'Express.js', icon: SiExpress },
     { name: 'MongoDB', icon: SiMongodb },
     { name: 'PostgreSQL', icon: SiPostgresql },
+    { name: 'ASP.NET Core', icon: SiDotnet },
+    { name: 'SQL Server', icon: TbSql },
   ],
   tools: [
     { name: 'Git', icon: SiGit },
@@ -36,6 +49,7 @@ export const skillsByCategory = {
   ],
   other: [
     { name: 'UI/UX Design', icon: SiFigma },
-    { name: 'Testing', icon: SiJest },
+    { name: 'Video Editing', icon: SiAdobe },
+    { name: 'Content Creation', icon: SiYoutube },
   ],
 };
