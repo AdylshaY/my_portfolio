@@ -1,11 +1,14 @@
 'use client';
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import { useTranslation } from 'react-i18next';
 import { SectionContainer } from './shared/SectionContainer';
 import { SectionHeader } from './shared/SectionHeader';
 import { MotionContainer } from './shared/MotionContainer';
 import { ProjectCard } from './shared/ProjectCard';
 import { Project } from '../data/types';
+import { Carousel } from 'react-responsive-carousel';
 
 export function Projects() {
   const { t } = useTranslation();
@@ -22,11 +25,19 @@ export function Projects() {
         />
 
         {/* Projects Grid */}
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <Carousel
+          centerMode
+          infiniteLoop
+          showThumbs={false}
+          showStatus={false}
+          autoPlay
+          interval={3000}
+          centerSlidePercentage={50}
+        >
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
-        </div>
+        </Carousel>
       </MotionContainer>
     </SectionContainer>
   );

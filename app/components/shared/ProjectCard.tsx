@@ -14,7 +14,9 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   const { t } = useTranslation();
 
-  const handleKeyboardNavigation = (e: React.KeyboardEvent<HTMLAnchorElement>) => {
+  const handleKeyboardNavigation = (
+    e: React.KeyboardEvent<HTMLAnchorElement>
+  ) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       window.open(project.githubUrl, '_blank', 'noopener noreferrer');
@@ -24,7 +26,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <motion.div
       variants={motionItem}
-      className='group relative bg-secondary/50 backdrop-blur-sm rounded-lg overflow-hidden flex flex-col'
+      className='group relative bg-secondary/50 backdrop-blur-sm rounded-lg overflow-hidden flex flex-col h-full'
     >
       {/* Project Image or Placeholder */}
       <div className='relative h-48 overflow-hidden'>
@@ -104,4 +106,4 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
     </motion.div>
   );
-} 
+};
