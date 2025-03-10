@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import './i18n/client';
+import { I18nProvider } from './i18n/I18nProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -70,7 +71,11 @@ export default function RootLayout({
         <meta name="color-scheme" content="dark" />
         <meta name="color-profile" content="sRGB" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <I18nProvider>
+          {children}
+        </I18nProvider>
+      </body>
     </html>
   );
 }
