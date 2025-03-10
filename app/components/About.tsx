@@ -23,7 +23,7 @@ export const About = () => {
         {/* Description */}
         <motion.div
           variants={motionItem}
-          className='space-y-6 text-muted-foreground'
+          className='space-y-6 text-muted-foreground text-justify'
         >
           <p>{t('about.description.part1')}</p>
           <p>{t('about.description.part2')}</p>

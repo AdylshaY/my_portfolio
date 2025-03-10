@@ -1,8 +1,8 @@
 'use client';
 
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import { FaMedium, FaXTwitter } from 'react-icons/fa6';
 import { useScrollTo } from '../hooks/useScrollTo';
 
 export const Footer = () => {
@@ -31,6 +31,16 @@ export const Footer = () => {
       icon: <FaEnvelope className='w-5 h-5' />,
       href: 'mailto:adylshay@gmail.com',
       label: 'Email',
+    },
+    {
+      icon: <FaYoutube className='w-5 h-5' />,
+      href: 'https://www.youtube.com/@AdylshasDevLab',
+      label: 'YouTube',
+    },
+    {
+      icon: <FaMedium className='w-5 h-5' />,
+      href: 'https://medium.com/@adylshay',
+      label: 'Medium',
     },
   ];
 
