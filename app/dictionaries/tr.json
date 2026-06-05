@@ -73,10 +73,15 @@
     "inDevelopment": "Geliştiriliyor",
     "noImage": "Henüz görsel eklenmedi",
     "viewOnGithub": "GitHub'da Görüntüle",
+    "viewProject": "Ziyaret Et",
     "viewAllProjects": "Tüm Projeleri Gör",
     "showMore": "Daha Fazla",
     "showLess": "Daha Az",
     "items": {
+      "yumasnap": {
+        "title": "YumaSnap - Etkinlik Fotoğraf Paylaşım Platformu",
+        "desc": "Etkinlikler ve düğün salonları için özel olarak geliştirilmiş gerçek zamanlı bir fotoğraf paylaşım platformu. Misafirler herhangi bir kayıt veya uygulama indirme gereksinimi duymadan, sadece etkinlikteki QR kodu okutarak hızlıca fotoğraf yükleyebilir ve paylaşabilirler."
+      },
       "YumaIdentity": {
         "title": "YumaIdentity - IAM Servisi",
         "desc": "Tam özellikli bir Identity and Access Management (IAM) servisi. Kullanıcı kimlik doğrulama, yetkilendirme, rol yönetimi ve güvenli token tabanlı oturum yönetimi sağlar. Modern full-stack mimarisiyle geliştirilmiş, ölçeklenebilir bir kimlik yönetim platformu."

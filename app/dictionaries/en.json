@@ -70,7 +70,7 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Some of my featured projects",
-    "viewProject": "View Project",
+    "viewProject": "Visit Site",
     "viewCode": "View Code",
     "inDevelopment": "In Development",
     "noImage": "No image added yet",
@@ -79,6 +79,10 @@
     "showMore": "Show More",
     "showLess": "Show Less",
     "items": {
+      "yumasnap": {
+        "title": "YumaSnap - Event Photo Sharing Platform",
+        "desc": "A real-time photo sharing platform custom-built for events and wedding halls. Guests can scan a QR code at the event to upload and share photos instantly, without the need for registration or downloading an app."
+      },
       "YumaIdentity": {
         "title": "YumaIdentity - IAM Service",
         "desc": "A full-featured Identity and Access Management (IAM) service. Provides user authentication, authorization, role management, and secure token-based session management. A scalable identity management platform developed with modern full-stack architecture."

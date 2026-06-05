@@ -7,7 +7,7 @@ import { motionItem } from './MotionContainer';
 import { Project } from '../../data/types';
 import { FaGithub } from 'react-icons/fa';
 import { useState, useRef, useEffect } from 'react';
-import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown, FiExternalLink } from 'react-icons/fi';
 import { useDictionary } from '../../context/DictionaryContext';
 
 interface ProjectCardProps {
@@ -35,7 +35,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   const handleKeyboardNavigation = (
     e: React.KeyboardEvent<HTMLAnchorElement>
   ) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if ((e.key === 'Enter' || e.key === ' ') && project.githubUrl) {
       e.preventDefault();
       window.open(project.githubUrl, '_blank', 'noopener noreferrer');
     }
@@ -146,19 +146,39 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
 
-        {/* GitHub Button */}
-        <Link
-          href={project.githubUrl}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300'
-          aria-label={`${viewOnGithubText}: ${project.title}`}
-          tabIndex={0}
-          onKeyDown={handleKeyboardNavigation}
-        >
-          <FaGithub className='w-5 h-5' />
-          <span>{viewOnGithubText}</span>
-        </Link>
+        {/* Action Buttons */}
+        <div className='flex gap-3 mt-auto w-full'>
+          {project.liveUrl && (
+            <Link
+              href={project.liveUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300'
+              aria-label={`${dict.projects.viewProject}: ${project.title}`}
+            >
+              <FiExternalLink className='w-5 h-5' />
+              <span>{dict.projects.viewProject}</span>
+            </Link>
+          )}
+          {project.githubUrl && (
+            <Link
+              href={project.githubUrl}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={`flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg transition-all hover:scale-105 duration-300 ${
+                project.liveUrl
+                  ? 'border-2 border-primary text-primary hover:bg-primary/10'
+                  : 'bg-primary text-primary-foreground hover:bg-primary/90'
+              }`}
+              aria-label={`${viewOnGithubText}: ${project.title}`}
+              tabIndex={0}
+              onKeyDown={handleKeyboardNavigation}
+            >
+              <FaGithub className='w-5 h-5' />
+              <span>{viewOnGithubText}</span>
+            </Link>
+          )}
+        </div>
       </div>
     </m.div>
   );
