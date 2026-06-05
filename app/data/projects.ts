@@ -2,6 +2,24 @@ import { Project } from './types';
 
 export const projects: (Project & { key: string })[] = [
   {
+    key: 'yumasnap',
+    title: 'YumaSnap - Etkinlik Fotoğraf Paylaşım Platformu',
+    description:
+      'Etkinlikler ve düğün salonları için özel olarak geliştirilmiş gerçek zamanlı bir fotoğraf paylaşım platformu. Misafirler herhangi bir kayıt veya uygulama indirme gereksinimi duymadan, sadece etkinlikteki QR kodu okutarak hızlıca fotoğraf yükleyebilir ve paylaşabilirler.',
+    liveUrl: 'https://yumasnap.yumayev.dev',
+    technologies: [
+      'Next.js',
+      'React',
+      'Tailwind CSS',
+      'TypeScript',
+      'Supabase',
+      'AWS S3',
+    ],
+    image: '/yumasnap.png',
+    complete: false,
+  },
+
+  {
     key: 'YumaIdentity',
     title: 'YumaIdentity - IAM Servisi',
     description:
