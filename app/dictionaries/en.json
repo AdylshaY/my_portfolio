@@ -1,52 +1,47 @@
 {
+  "meta": {
+    "title": "Adylsha Yumayev | Software Engineer — C#/.NET & Backend",
+    "description": "Adylsha Yumayev — Software Engineer focused on C#/.NET, ASP.NET Core, SQL Server, and backend engineering. Builds enterprise applications professionally and independent systems in identity management, real-time infrastructure, and observability, with a growing focus on system design and software architecture."
+  },
   "nav": {
     "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "education": "Education",
     "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Hello, I'm",
-    "role": "Full Stack Developer",
-    "description": "A software developer who loves problem-solving, is always open to learning, and enjoys discovering new technologies.",
+    "role": "Software Engineer — C#/.NET & Backend Engineering",
+    "description": "I build backend systems and APIs with C#, ASP.NET Core, and SQL Server — from enterprise applications to independently built systems in identity management and real-time infrastructure. I'm currently deepening my focus on system design and software architecture.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "A Passionate Full Stack Developer",
-    "p1": "I enjoy taking an active role in every stage of the software development process. I work across a wide range of areas, from Frontend to Backend, database management to system architecture.",
-    "p2": "I love transforming complex problems into simple and effective solutions. Using my analytical thinking and logical reasoning skills, I strive to find the optimum solution in every project.",
-    "p3": "To keep up with the rapid changes in the technology world, I constantly improve myself and learn new tools and methodologies.",
+    "subtitle": "Backend engineer, moving toward software architecture",
+    "p1": "Over four years, I've worked mainly on backend systems for enterprise software — API development, database structures on SQL Server, and internal platforms supporting real business workflows. I also contributed to the architecture of my current company's first mobile application.",
+    "p2": "Outside of work, I build backend-heavy systems that let me explore identity, distributed systems, observability, and system design in depth. My projects include YumaIdentity, an identity and access management service, YumaSnap, a real-time event platform, and YumaLog, a logging and observability library.",
+    "p3": "In 2025, I completed focused training in microservices and software architecture patterns, and I'm deliberately continuing in that direction.",
     "keyPointsTitle": "Key Highlights",
     "experienceTitle": "Work Experience",
-    "experienceSubtitle": "Experience gained throughout my professional career",
+    "experienceSubtitle": "4+ years building backend systems, APIs, and internal platforms for enterprise workflows",
     "keyPoints": {
-      "problemSolver": {
-        "title": "Problem Solver",
-        "description": "I enjoy finding solutions to complex problems. Every challenge presents a new learning opportunity."
+      "backendFirst": {
+        "title": "Backend-first",
+        "description": "ASP.NET Core APIs and SQL Server data layers are at the center of my professional work."
       },
-      "learner": {
-        "title": "Continuous Learner",
-        "description": "Technology is constantly evolving, and I love evolving with it. Learning new things is a passion for me."
+      "systemDesign": {
+        "title": "System design & architecture",
+        "description": "I am actively developing deeper knowledge in system design, microservices, and software architecture."
       },
-      "fullstack": {
-        "title": "Full-Stack Developer",
-        "description": "I have experience in both frontend and backend areas. This allows me to bring a holistic approach to my projects."
+      "independentSystems": {
+        "title": "Independent systems, not tutorials",
+        "description": "I independently design and build backend-heavy systems such as IAM, real-time platforms, and observability tooling."
       },
-      "techStack": {
-        "title": "Diverse Tech Stack",
-        "description": "I have experience with various technologies such as React.js, Next.js, C#, ASP.NET Core, .NET Framework, Web API, NodeJS, T-SQL, Docker, ASP.NET MVC, and Flutter."
-      },
-      "perspective": {
-        "title": "Versatile Perspective",
-        "description": "I value approaching problems from different angles and developing creative, out-of-the-box solutions."
-      },
-      "adaptable": {
-        "title": "Adaptable",
-        "description": "I work successfully in dynamic environments and adapt quickly to changing requirements. This flexibility allows me to effectively handle unexpected challenges."
+      "fullStackWhenNeeded": {
+        "title": "Full-stack when needed",
+        "description": "I'm comfortable working with React/Next.js and Flutter when the product requires frontend or mobile development, but backend engineering is my primary focus."
       }
     },
     "jobs": {
@@ -72,7 +67,7 @@
     "subtitle": "Some of my featured projects",
     "viewProject": "Visit Site",
     "viewCode": "View Code",
-    "inDevelopment": "In Development",
+    "inDevelopment": "Active Development",
     "noImage": "No image added yet",
     "viewOnGithub": "View on GitHub",
     "viewAllProjects": "View All Projects",
@@ -81,57 +76,37 @@
     "items": {
       "yumasnap": {
         "title": "YumaSnap - Event Photo Sharing Platform",
-        "desc": "A real-time photo sharing platform custom-built for events and wedding halls. Guests can scan a QR code at the event to upload and share photos instantly, without the need for registration or downloading an app."
+        "desc": "Events and wedding venues need a way for guests to share photos instantly, without asking everyone to create an account or install an app. YumaSnap solves that with a QR-based upload flow — guests scan a code at the event and start uploading immediately. I designed the upload pipeline on Supabase and AWS S3, and the real-time layer that syncs every guest's gallery as new photos come in."
       },
       "YumaIdentity": {
         "title": "YumaIdentity - IAM Service",
-        "desc": "A full-featured Identity and Access Management (IAM) service. Provides user authentication, authorization, role management, and secure token-based session management. A scalable identity management platform developed with modern full-stack architecture."
+        "desc": "An independently designed and built Identity and Access Management (IAM) service — authentication, role-based authorization, and multi-tenant access control for my own applications. Structured with Clean Architecture on ASP.NET Core and EF Core, with JWT-based sessions and OAuth 2.0 (PKCE) authorization flows, backed by SQL Server and shipped as a Dockerized backend with its own versioned releases. The API is under active development; the admin UI is still in progress."
       },
-      "dalle": {
-        "title": "Dall-E Clone",
-        "desc": "An AI image generation app inspired by OpenAI's DALL-E. Users can generate and share AI-created images based on text prompts using the MERN stack."
-      },
-      "airbnb": {
-        "title": "Airbnb Clone",
-        "desc": "A clone of the Airbnb website. Users can search for properties, view details, and book stays."
-      },
-      "twitter": {
-        "title": "Twitter Clone",
-        "desc": "A modern clone of Twitter. Users can tweet, follow others, and interact. A full-featured social media app developed using Next.js and TypeScript."
-      },
-      "aiPrompt": {
-        "title": "AI Prompt App",
-        "desc": "A platform where users can create and share AI prompts. Users can save their own prompts, discover others', and interact. Developed using Next.js and modern authentication methods."
-      },
-      "pokemon": {
-        "title": "Mobile Pokemon App",
-        "desc": "A Flutter project developed using clean architecture principles with PokeAPI. Features include fetching and displaying Pokémon, viewing detailed info, searching by name, and responsive design for mobile and web. Organized with a feature-first architecture for modularity and maintainability."
-      },
-      "habit": {
-        "title": "Habit Tracker App",
-        "desc": "A Flutter app that helps users track and maintain their habits with a clean, modern UI and powerful features."
+      "yumalog": {
+        "title": "YumaLog - Structured Logging & Observability for .NET",
+        "desc": "Enterprise Windows Services and legacy .NET Framework applications often have no consistent way to centralize logs. YumaLog is a structured logging library I built to solve that — a single logging interface that works across both .NET Framework and modern .NET Core/.NET 5+ services. It buffers log events asynchronously, writes them as structured JSON per application, and is designed to be collected by Grafana Alloy and shipped to Loki for querying in Grafana. Ships as a NuGet package with its own test suite and configurable buffering, retention, and diagnostics for rollout."
       }
     }
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Technologies and tools I work with",
-    "categories": {
-      "frontend": "Frontend Development",
-      "backend": "Backend Development",
-      "tools": "Tools & Methodologies",
-      "other": "Other Skills"
+    "subtitle": "Backend-first, with full-stack range",
+    "intro": "Primary focus: C#/.NET backend engineering, SQL Server, and system design. The rest supports that — including the frontend and mobile work I do when a project calls for it.",
+    "tiers": {
+      "primary": "Primary Focus",
+      "secondary": "Also Working With",
+      "supporting": "Supporting Skills"
     }
   },
   "certificates": {
-    "title": "Certificates",
-    "subtitle": "Trainings and achievements",
+    "title": "Current Focus",
+    "subtitle": "2025 training in software architecture and microservices — the direction I'm building toward",
     "viewCertificate": "View Certificate",
     "viewAllCertificates": "View All Certificates"
   },
   "footer": {
     "aboutTitle": "About Me",
-    "aboutDesc": "I'm a detail-oriented Full Stack Developer developing innovative and sustainable solutions with modern technologies.",
+    "aboutDesc": "Backend-focused software engineer working with C#, .NET, and SQL Server, with a growing focus on system design and software architecture.",
     "linksTitle": "Quick Links",
     "contactTitle": "Contact Me",
     "email": "Email",

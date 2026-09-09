@@ -5,7 +5,9 @@ import { i18n } from './i18n-config';
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if the file is an asset (image, favicon, etc.)
+  // Check if the file is an asset (image, favicon, etc.) or a root-level
+  // metadata route (robots.txt, sitemap.xml, OG images) that must not be
+  // rewritten under a locale prefix.
   if (
     [
       '/manifest.json',
@@ -17,6 +19,8 @@ export function proxy(request: NextRequest) {
       '/twitter-image.png',
       '/prompt-app.png',
       '/yumasnap.png',
+      '/robots.txt',
+      '/sitemap.xml',
     ].includes(pathname) ||
     pathname.startsWith('/blogs/') ||
     pathname.startsWith('/certificates/') ||
