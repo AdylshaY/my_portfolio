@@ -20,7 +20,7 @@ export const About = () => {
     company: dict.about.jobs[job.key]?.title || '',
     position: dict.about.jobs[job.key]?.role || '',
     period: job.period,
-    description: dict.about.jobs[job.key]?.desc || '',
+    description: dict.about.jobs[job.key]?.desc || [],
     technologies: job.technologies,
   }));
 

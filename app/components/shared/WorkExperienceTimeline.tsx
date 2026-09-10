@@ -70,9 +70,11 @@ export const WorkExperienceTimeline = ({
                 <h5 className='text-lg font-medium mb-4'>
                   {experience.company}
                 </h5>
-                <p className='text-muted-foreground mb-4'>
-                  {experience.description}
-                </p>
+                <ul className='text-muted-foreground mb-4 space-y-1.5 list-disc list-outside pl-5 marker:text-primary/50'>
+                  {experience.description.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
 
                 {experience.technologies && (
                   <div className='flex flex-wrap gap-2 mt-2'>

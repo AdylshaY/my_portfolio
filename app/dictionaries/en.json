@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Adylsha Yumayev | Software Engineer — C#/.NET & Backend",
-    "description": "Adylsha Yumayev — Software Engineer focused on C#/.NET, ASP.NET Core, SQL Server, and backend engineering. Builds enterprise applications professionally and independent systems in identity management, real-time infrastructure, and observability, with a growing focus on system design and software architecture."
+    "description": "Adylsha Yumayev — Software Engineer focused on C#/.NET, ASP.NET Core, SQL Server, and backend engineering. Builds enterprise applications professionally and independent systems in identity management, real-time platforms, and observability."
   },
   "nav": {
     "home": "Home",
@@ -13,85 +13,98 @@
   "hero": {
     "greeting": "Hello, I'm",
     "role": "Software Engineer — C#/.NET & Backend Engineering",
-    "description": "I build backend systems and APIs with C#, ASP.NET Core, and SQL Server — from enterprise applications to independently built systems in identity management and real-time infrastructure. I'm currently deepening my focus on system design and software architecture.",
+    "description": "I build backend systems and APIs with C#, ASP.NET Core, and SQL Server, from enterprise applications to independent systems in identity, real-time platforms, and observability. Currently focused on system design and software architecture.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Backend engineer, moving toward software architecture",
+    "subtitle": "Backend engineer — focused on system design and architecture",
     "p1": "Over four years, I've worked mainly on backend systems for enterprise software — API development, database structures on SQL Server, and internal platforms supporting real business workflows. I also contributed to the architecture of my current company's first mobile application.",
     "p2": "Outside of work, I build backend-heavy systems that let me explore identity, distributed systems, observability, and system design in depth. My projects include YumaIdentity, an identity and access management service, YumaSnap, a real-time event platform, and YumaLog, a logging and observability library.",
-    "p3": "In 2025, I completed focused training in microservices and software architecture patterns, and I'm deliberately continuing in that direction.",
-    "keyPointsTitle": "Key Highlights",
+    "p3": "I'm continuing to deepen my focus on system design, distributed systems, and software architecture.",
+    "keyPointsTitle": "What I Focus On",
     "experienceTitle": "Work Experience",
     "experienceSubtitle": "4+ years building backend systems, APIs, and internal platforms for enterprise workflows",
     "keyPoints": {
       "backendFirst": {
-        "title": "Backend-first",
+        "title": "Backend-focused",
         "description": "ASP.NET Core APIs and SQL Server data layers are at the center of my professional work."
       },
       "systemDesign": {
         "title": "System design & architecture",
-        "description": "I am actively developing deeper knowledge in system design, microservices, and software architecture."
+        "description": "I focus on system design, microservices, and software architecture, applying these concepts across my professional and independent work."
       },
       "independentSystems": {
-        "title": "Independent systems, not tutorials",
+        "title": "Independent engineering projects",
         "description": "I independently design and build backend-heavy systems such as IAM, real-time platforms, and observability tooling."
       },
       "fullStackWhenNeeded": {
         "title": "Full-stack when needed",
-        "description": "I'm comfortable working with React/Next.js and Flutter when the product requires frontend or mobile development, but backend engineering is my primary focus."
+        "description": "I'm comfortable working with React/Next.js and Flutter when a project requires frontend or mobile development, but backend engineering is my primary focus."
       }
     },
     "jobs": {
       "gelecek2025": {
         "title": "Gelecek Varlık Yönetimi",
         "role": "Software Development Specialist",
-        "desc": "Responsible for the development and optimization of critical internal software systems. Managing the design, development, and secure deployment processes of external-facing web platforms. Designing database structures and providing backend solutions that support corporate workflows. Also playing an active role in the architecture and development of the company's first mobile application."
+        "desc": [
+          "Develop and maintain business-critical enterprise applications using C#/.NET, ASP.NET Core, ASP.NET MVC, and SQL Server.",
+          "Design and implement backend services and REST APIs supporting internal workflows and external-facing platforms.",
+          "Design database structures and develop T-SQL queries for business-critical applications.",
+          "Designed and implemented a reverse proxy using C# and YARP to securely expose selected internal APIs to external clients.",
+          "Contributed to the architecture and development of the company's first mobile application, working across the mobile client and backend services.",
+          "Contribute to deployment, troubleshooting, security, and modernization of existing applications."
+        ]
       },
       "gelecek2022": {
         "title": "Gelecek Varlık Yönetimi",
         "role": "Junior Full Stack Developer",
-        "desc": "Responsible for the development and maintenance of applications used within the company. Developing projects using various technologies. Writing database queries when necessary during development."
+        "desc": [
+          "Developed and maintained internal business applications using C#/.NET and web technologies.",
+          "Implemented application features and integrations based on business requirements.",
+          "Worked with SQL Server and T-SQL for application data access and business workflows."
+        ]
       },
       "patika": {
         "title": "Gelecek Varlık Yönetimi - Patika",
         "role": "Bootcamp Student",
-        "desc": "Completed training provided on the Patika.dev platform, learning the fundamentals of software development. Subsequently passed interviews and started working as a Junior Full Stack Developer at Gelecek Varlık Yönetimi."
+        "desc": [
+          "Completed software development training through Patika.dev and subsequently joined Gelecek Varlık Yönetimi as a Junior Full Stack Developer."
+        ]
       }
     }
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Some of my featured projects",
-    "viewProject": "Visit Site",
-    "viewCode": "View Code",
+    "subtitle": "Selected projects that reflect how I build software",
     "inDevelopment": "Active Development",
     "noImage": "No image added yet",
+    "viewProject": "Visit Site",
+    "viewCode": "View Code",
     "viewOnGithub": "View on GitHub",
     "viewAllProjects": "View All Projects",
     "showMore": "Show More",
     "showLess": "Show Less",
     "items": {
       "yumasnap": {
-        "title": "YumaSnap - Event Photo Sharing Platform",
-        "desc": "Events and wedding venues need a way for guests to share photos instantly, without asking everyone to create an account or install an app. YumaSnap solves that with a QR-based upload flow — guests scan a code at the event and start uploading immediately. I designed the upload pipeline on Supabase and AWS S3, and the real-time layer that syncs every guest's gallery as new photos come in."
+        "title": "YumaSnap — Event Photo Sharing Platform",
+        "desc": "A real-time photo-sharing platform for events and wedding venues. Guests scan a QR code and start uploading instantly without creating an account or installing an app. I designed the upload pipeline on Supabase and AWS S3, along with the real-time layer that keeps guest galleries synchronized as new photos arrive."
       },
       "YumaIdentity": {
-        "title": "YumaIdentity - IAM Service",
-        "desc": "An independently designed and built Identity and Access Management (IAM) service — authentication, role-based authorization, and multi-tenant access control for my own applications. Structured with Clean Architecture on ASP.NET Core and EF Core, with JWT-based sessions and OAuth 2.0 (PKCE) authorization flows, backed by SQL Server and shipped as a Dockerized backend with its own versioned releases. The API is under active development; the admin UI is still in progress."
+        "title": "YumaIdentity — IAM Service",
+        "desc": "An independently designed and built Identity and Access Management service for my own applications. It provides authentication, role-based authorization, and multi-tenant access control, built with ASP.NET Core, EF Core, SQL Server, JWT, and OAuth 2.0 (PKCE). The API is under active development, with the administration interface still in progress."
       },
       "yumalog": {
-        "title": "YumaLog - Structured Logging & Observability for .NET",
-        "desc": "Enterprise Windows Services and legacy .NET Framework applications often have no consistent way to centralize logs. YumaLog is a structured logging library I built to solve that — a single logging interface that works across both .NET Framework and modern .NET Core/.NET 5+ services. It buffers log events asynchronously, writes them as structured JSON per application, and is designed to be collected by Grafana Alloy and shipped to Loki for querying in Grafana. Ships as a NuGet package with its own test suite and configurable buffering, retention, and diagnostics for rollout."
+        "title": "YumaLog — Structured Logging & Observability for .NET",
+        "desc": "A structured logging library designed to provide a consistent logging approach across .NET Framework and modern .NET applications. It buffers log events asynchronously, writes structured JSON logs per application, and is designed for collection through Grafana Alloy and querying in Grafana via Loki. Distributed as a NuGet package with a test suite and configurable buffering, retention, and diagnostics."
       }
     }
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Backend-first, with full-stack range",
-    "intro": "Primary focus: C#/.NET backend engineering, SQL Server, and system design. The rest supports that — including the frontend and mobile work I do when a project calls for it.",
+    "subtitle": "Backend-first — ordered by focus and depth",
+    "intro": "Primary focus: C#/.NET backend engineering, SQL Server, and system design. The rest supports that focus, including frontend and mobile development when a project requires it.",
     "tiers": {
       "primary": "Primary Focus",
       "secondary": "Also Working With",
@@ -100,7 +113,7 @@
   },
   "certificates": {
     "title": "Current Focus",
-    "subtitle": "2025 training in software architecture and microservices — the direction I'm building toward",
+    "subtitle": "Software architecture and microservices training completed in 2025",
     "viewCertificate": "View Certificate",
     "viewAllCertificates": "View All Certificates"
   },
@@ -114,7 +127,7 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Welcome to my blog! Here I share my thoughts, ideas, and new learnings about software development.",
+    "subtitle": "Technical notes on .NET, backend engineering, system design, and software architecture.",
     "back": "Go Back",
     "readTime": "Read time",
     "notFound": "Blog Not Found"
