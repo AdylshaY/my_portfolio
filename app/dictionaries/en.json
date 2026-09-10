@@ -26,6 +26,8 @@
     "keyPointsTitle": "What I Focus On",
     "experienceTitle": "Work Experience",
     "experienceSubtitle": "4+ years building backend systems, APIs, and internal platforms for enterprise workflows",
+    "showMore": "Show More",
+    "showLess": "Show Less",
     "keyPoints": {
       "backendFirst": {
         "title": "Backend-focused",
@@ -53,6 +55,10 @@
           "Design and implement backend services and REST APIs supporting internal workflows and external-facing platforms.",
           "Design database structures and develop T-SQL queries for business-critical applications.",
           "Designed and implemented a reverse proxy using C# and YARP to securely expose selected internal APIs to external clients.",
+          "Built a company-wide structured logging library (.NET Standard 2.0) with its own CI/CD, published as a private NuGet package on Azure DevOps Artifacts.",
+          "Added a Log Ingestion API so client applications could ship logs through the same pipeline.",
+          "Migrated large documents out of the primary database into a dedicated SQL Server database behind a new API, resolving recurring backup and storage issues.",
+          "Leading a team building an OCR → PII → analysis pipeline that turns select documents into structured Excel/JSON, automating legal document checks; chat-based querying planned next.",
           "Contributed to the architecture and development of the company's first mobile application, working across the mobile client and backend services.",
           "Contribute to deployment, troubleshooting, security, and modernization of existing applications."
         ]

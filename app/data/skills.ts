@@ -20,9 +20,19 @@ import {
   SiYoutube,
   SiRedis,
   SiGrafana,
+  SiRedux,
 } from 'react-icons/si';
-import { TbSql, TbApi, TbSitemap, TbServerCog, TbActivityHeartbeat, TbRoute } from 'react-icons/tb';
-import { FaServer, FaDiagramProject, FaCubes, FaShieldHalved } from 'react-icons/fa6';
+import { TbSql, TbApi, TbSitemap, TbServerCog, TbActivityHeartbeat, TbRoute, TbDatabase } from 'react-icons/tb';
+import {
+  FaServer,
+  FaDiagramProject,
+  FaCubes,
+  FaShieldHalved,
+  FaPuzzlePiece,
+  FaLayerGroup,
+  FaCircleNodes,
+  FaBrain,
+} from 'react-icons/fa6';
 
 // Ordered by how much weight each tier should carry in the UI - primary
 // is the professional/backend focus, secondary is real supporting depth,
@@ -40,20 +50,26 @@ export const skillTiers = {
   ],
   secondary: [
     { name: 'Entity Framework', icon: SiDotnet },
-    { name: 'Docker', icon: SiDocker },
-    { name: 'CI/CD', icon: SiJenkins },
+    { name: 'Dapper', icon: TbDatabase },
+    { name: 'Design Patterns', icon: FaPuzzlePiece },
+    { name: 'Clean Architecture', icon: FaLayerGroup },
+    { name: 'Domain-Driven Design', icon: FaCircleNodes },
     { name: 'Microservices', icon: FaCubes },
+    { name: 'Docker', icon: SiDocker },
+    { name: 'CI/CD (Azure DevOps)', icon: SiJenkins },
     { name: 'Authentication / Authorization', icon: FaShieldHalved },
     { name: 'Redis', icon: SiRedis },
     { name: 'PostgreSQL', icon: SiPostgresql },
     { name: 'Observability', icon: TbActivityHeartbeat },
     { name: 'Grafana / Loki', icon: SiGrafana },
     { name: 'YARP', icon: TbRoute },
+    { name: 'ML.NET', icon: FaBrain },
     { name: 'Git', icon: SiGit },
   ],
   supporting: [
     { name: 'React.js', icon: SiReact },
     { name: 'Next.js', icon: SiNextdotjs },
+    { name: 'Redux', icon: SiRedux },
     { name: 'TypeScript', icon: SiTypescript },
     { name: 'Flutter', icon: SiFlutter },
     { name: 'MongoDB', icon: SiMongodb },
