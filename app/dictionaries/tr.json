@@ -26,6 +26,8 @@
     "keyPointsTitle": "Odak Alanlarım",
     "experienceTitle": "İş Tecrübem",
     "experienceSubtitle": "Kurumsal iş akışları için backend sistemler, API'ler ve iç platformlar geliştirdiğim 4+ yıl",
+    "showMore": "Daha Fazla",
+    "showLess": "Daha Az",
     "keyPoints": {
       "backendFirst": {
         "title": "Backend odaklı",
@@ -55,6 +57,10 @@
           "Kurum içi iş akışlarını ve dış kullanıcılara yönelik platformları destekleyen backend servisleri ve REST API'lerin geliştirilmesi.",
           "Uygulamalar için veritabanı yapılarının tasarlanması ve T-SQL sorgularının geliştirilmesi.",
           "Belirli kurum içi API'lerin dış istemcilere güvenli şekilde sunulabilmesi amacıyla C# ve YARP kullanarak reverse proxy çözümünün tasarlanması ve geliştirilmesi.",
+          "Şirket genelinde kullanılan structured logging kütüphanesinin (.NET Standard 2.0) ve kendi CI/CD'sinin geliştirilip Azure DevOps Artifacts'ta private NuGet feed olarak yayınlanması.",
+          "İstemci uygulamalarının aynı kütüphane üzerinden log göndermesini sağlayan bir Log Ingestion API'nin eklenmesi.",
+          "Ana veritabanındaki büyük hacimli dokümanların yol açtığı backup sorunlarının, dokümanların ayrı bir SQL Server veritabanına taşınıp erişimin yeni bir API üzerinden sağlanmasıyla çözülmesi.",
+          "Belirli doküman tiplerini OCR → PII → analiz sürecinden geçirip yapılandırılmış Excel/JSON çıktısına dönüştüren pipeline'ı geliştiren ekibe liderlik edilmesi; hukuk takip kontrollerini otomatikleştiriyor, sohbet tabanlı sorgu sonraki faz için planlanıyor.",
           "Şirketin ilk mobil uygulamasının mimarisinin oluşturulması ve geliştirilmesinde mobil istemci ve backend servisleriyle birlikte aktif rol alınması.",
           "Deployment, hata analizi, güvenlik ve mevcut uygulamaların modernizasyon süreçlerine katkı sağlanması."
         ]
