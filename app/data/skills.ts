@@ -5,7 +5,6 @@ import {
   SiTailwindcss,
   SiHtml5,
   SiNodedotjs,
-  SiExpress,
   SiMongodb,
   SiPostgresql,
   SiGit,
@@ -19,35 +18,67 @@ import {
   SiFlutter,
   SiAdobe,
   SiYoutube,
+  SiRedis,
+  SiGrafana,
+  SiRedux,
 } from 'react-icons/si';
-import { TbSql } from 'react-icons/tb';
+import { TbSql, TbApi, TbSitemap, TbServerCog, TbActivityHeartbeat, TbRoute, TbDatabase } from 'react-icons/tb';
+import {
+  FaServer,
+  FaDiagramProject,
+  FaCubes,
+  FaShieldHalved,
+  FaPuzzlePiece,
+  FaLayerGroup,
+  FaCircleNodes,
+  FaBrain,
+} from 'react-icons/fa6';
 
-export const skillsByCategory = {
-  frontend: [
+// Ordered by how much weight each tier should carry in the UI - primary
+// is the professional/backend focus, secondary is real supporting depth,
+// supporting is capability beyond the core focus (frontend/mobile/tools).
+export const skillTiers = {
+  primary: [
+    { name: 'C# / .NET', icon: SiDotnet },
+    { name: 'ASP.NET Core', icon: TbServerCog },
+    { name: 'ASP.NET MVC', icon: FaServer },
+    { name: 'REST APIs', icon: TbApi },
+    { name: 'SQL Server / T-SQL', icon: TbSql },
+    { name: 'Backend Engineering', icon: FaServer },
+    { name: 'System Design', icon: TbSitemap },
+    { name: 'Software Architecture', icon: FaDiagramProject },
+  ],
+  secondary: [
+    { name: 'Entity Framework', icon: SiDotnet },
+    { name: 'Dapper', icon: TbDatabase },
+    { name: 'Design Patterns', icon: FaPuzzlePiece },
+    { name: 'Clean Architecture', icon: FaLayerGroup },
+    { name: 'Domain-Driven Design', icon: FaCircleNodes },
+    { name: 'Microservices', icon: FaCubes },
+    { name: 'Docker', icon: SiDocker },
+    { name: 'CI/CD (Azure DevOps)', icon: SiJenkins },
+    { name: 'Authentication / Authorization', icon: FaShieldHalved },
+    { name: 'Redis', icon: SiRedis },
+    { name: 'PostgreSQL', icon: SiPostgresql },
+    { name: 'Observability', icon: TbActivityHeartbeat },
+    { name: 'Grafana / Loki', icon: SiGrafana },
+    { name: 'YARP', icon: TbRoute },
+    { name: 'ML.NET', icon: FaBrain },
+    { name: 'Git', icon: SiGit },
+  ],
+  supporting: [
     { name: 'React.js', icon: SiReact },
     { name: 'Next.js', icon: SiNextdotjs },
+    { name: 'Redux', icon: SiRedux },
     { name: 'TypeScript', icon: SiTypescript },
+    { name: 'Flutter', icon: SiFlutter },
+    { name: 'MongoDB', icon: SiMongodb },
+    { name: 'Node.js', icon: SiNodedotjs },
     { name: 'Tailwind CSS', icon: SiTailwindcss },
     { name: 'HTML/CSS', icon: SiHtml5 },
     { name: 'jQuery', icon: SiJquery },
     { name: 'Bootstrap', icon: SiBootstrap },
     { name: 'Material UI', icon: SiMui },
-    { name: 'Flutter', icon: SiFlutter },
-  ],
-  backend: [
-    { name: 'Node.js', icon: SiNodedotjs },
-    { name: 'Express.js', icon: SiExpress },
-    { name: 'MongoDB', icon: SiMongodb },
-    { name: 'PostgreSQL', icon: SiPostgresql },
-    { name: 'ASP.NET Core', icon: SiDotnet },
-    { name: 'SQL Server', icon: TbSql },
-  ],
-  tools: [
-    { name: 'Git', icon: SiGit },
-    { name: 'Docker', icon: SiDocker },
-    { name: 'CI/CD', icon: SiJenkins },
-  ],
-  other: [
     { name: 'UI/UX Design', icon: SiFigma },
     { name: 'Video Editing', icon: SiAdobe },
     { name: 'Content Creation', icon: SiYoutube },

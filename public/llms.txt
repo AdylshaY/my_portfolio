@@ -1,0 +1,21 @@
+# Adylsha Yumayev
+
+> Software Engineer focused on C#/.NET, backend engineering, and system design. Builds enterprise applications professionally and independent backend/infrastructure systems (identity management, real-time platforms, structured logging/observability), with 2025 training in software architecture and microservices.
+
+## Site
+
+- [Homepage (Turkish, default)](https://yumayev.dev/): About, work experience, projects, and skills.
+- [Homepage (English)](https://yumayev.dev/en): English version of the same content.
+- [Blog](https://yumayev.dev/blog): Technical notes on .NET, backend engineering, and system design.
+
+## Notable projects
+
+- [YumaIdentity](https://github.com/AdylshaY/YumaIdentity): Identity and Access Management (IAM) service built with ASP.NET Core, EF Core, SQL Server, JWT, and OAuth 2.0 (PKCE).
+- [YumaLog](https://github.com/AdylshaY/Yumalog): Structured logging library for .NET Framework and .NET Core, built for Grafana Loki/Alloy observability pipelines.
+- [YumaSnap](https://yumasnap.yumayev.dev): Real-time, QR-based event photo-sharing platform.
+
+## Contact
+
+- LinkedIn: https://linkedin.com/in/adylshay
+- GitHub: https://github.com/adylshay
+- Email: adylshay@gmail.com

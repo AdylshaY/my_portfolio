@@ -20,7 +20,7 @@ export const About = () => {
     company: dict.about.jobs[job.key]?.title || '',
     position: dict.about.jobs[job.key]?.role || '',
     period: job.period,
-    description: dict.about.jobs[job.key]?.desc || '',
+    description: dict.about.jobs[job.key]?.desc || [],
     technologies: job.technologies,
   }));
 
@@ -42,9 +42,6 @@ export const About = () => {
           <p>{dict.about.p3}</p>
         </m.div>
 
-        {/* Key Points using BentoGrid component */}
-        <BentoGrid title={dict.about.keyPointsTitle} items={keyPoints} />
-
         {/* Work Experience Timeline */}
         <WorkExperienceTimeline
           title={dict.about.experienceTitle}
@@ -52,10 +49,13 @@ export const About = () => {
           experiences={jobs}
         />
 
-        {/* Certificates Section */}
+        {/* Certificates Section - current technical direction, kept close to experience */}
         <div className='mt-16'>
           <Certificates />
         </div>
+
+        {/* Key Points using BentoGrid component */}
+        <BentoGrid title={dict.about.keyPointsTitle} items={keyPoints} />
       </MotionContainer>
     </SectionContainer>
   );

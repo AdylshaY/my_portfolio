@@ -1,6 +1,6 @@
-# Adylsha Yumayev - Full Stack Developer Portfolio
+# Adylsha Yumayev - Software Engineer Portfolio
 
-Welcome to my personal portfolio website source code. This project showcases my skills, experience, projects, and blog posts as a Full Stack Developer.
+Welcome to my personal portfolio website source code. This project showcases my skills, experience, projects, and blog posts as a Software Engineer focused on C#/.NET and backend engineering.
 
 ## 🚀 Built With
 

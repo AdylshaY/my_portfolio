@@ -1,76 +1,92 @@
 {
+  "meta": {
+    "title": "Adylsha Yumayev | Yazılım Mühendisi — C#/.NET ve Backend",
+    "description": "Adylsha Yumayev — C#, ASP.NET Core, SQL Server ve backend geliştirme odaklı bir Yazılım Mühendisi. Kurumsal uygulamalar geliştiriyor; kimlik yönetimi, gerçek zamanlı platformlar ve observability alanlarında bağımsız sistemler kuruyor."
+  },
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımda",
     "projects": "Projeler",
-    "education": "Eğitim",
     "blog": "Blog",
     "contact": "İletişim"
   },
   "hero": {
     "greeting": "Merhaba, Ben",
-    "role": "Full Stack Developer",
-    "description": "Problem çözmeyi seven, sürekli öğrenmeye açık ve yeni teknolojileri keşfetmekten keyif alan bir yazılım geliştiricisi",
+    "role": "Yazılım Mühendisi — C#/.NET ve Backend Geliştirme",
+    "description": "C#, ASP.NET Core ve SQL Server ile backend sistemler ve API'ler geliştiriyorum; kurumsal uygulamalardan identity, gerçek zamanlı platformlar ve observability odaklı bağımsız sistemlere kadar çalışıyorum. Odağımı sistem tasarımı ve yazılım mimarisi yönünde derinleştiriyorum.",
     "viewProjects": "Projelerimi Gör",
     "contactMe": "İletişime Geç"
   },
   "about": {
     "title": "Hakkımda",
-    "subtitle": "Tutkulu bir Full Stack Developer",
-    "p1": "Yazılım geliştirme sürecinin her aşamasında aktif rol almaktan keyif alıyorum. Frontend'den backend'e, veritabanı yönetiminden sistem mimarisine kadar geniş bir yelpazede çalışmalar yapıyorum.",
-    "p2": "Karmaşık problemleri basit ve etkili çözümlere dönüştürmeyi seviyorum. Analitik düşünme ve mantık yürütme becerilerimi kullanarak her projede en optimum çözümü bulmaya çalışıyorum.",
-    "p3": "Teknoloji dünyasındaki hızlı değişime ayak uydurmak için sürekli kendimi geliştiriyor, yeni araçlar ve metodolojiler öğreniyorum.",
-    "keyPointsTitle": "Öne Çıkan Özelliklerim",
+    "subtitle": "Backend mühendisi — sistem tasarımı ve mimariye odaklanan",
+    "p1": "Dört yılı aşkın süredir ağırlıklı olarak kurumsal yazılımların backend tarafında çalışıyorum — API geliştirme, SQL Server üzerinde veritabanı yapıları ve gerçek iş akışlarını destekleyen iç platformlar üzerine deneyim sahibiyim. Ayrıca mevcut şirketimin ilk mobil uygulamasının mimarisine katkı sağladım.",
+    "p2": "İş dışında identity, dağıtık sistemler, observability ve sistem tasarımı konularını derinlemesine ele aldığım backend ağırlıklı sistemler geliştiriyorum. Bu projeler arasında bir identity and access management servisi olan YumaIdentity, gerçek zamanlı bir etkinlik platformu olan YumaSnap ve bir logging ve observability kütüphanesi olan YumaLog bulunuyor.",
+    "p3": "Sistem tasarımı, dağıtık sistemler ve yazılım mimarisi alanlarında odağımı derinleştirmeye devam ediyorum.",
+    "keyPointsTitle": "Odak Alanlarım",
     "experienceTitle": "İş Tecrübem",
-    "experienceSubtitle": "Profesyonel kariyerimde edindiğim deneyimler",
+    "experienceSubtitle": "Kurumsal iş akışları için backend sistemler, API'ler ve iç platformlar geliştirdiğim 4+ yıl",
+    "showMore": "Daha Fazla",
+    "showLess": "Daha Az",
     "keyPoints": {
-      "problemSolver": {
-        "title": "Problem Çözücü",
-        "description": "Karmaşık problemlere çözüm bulmaktan keyif alıyorum. Her zorluk, yeni bir öğrenme fırsatı sunuyor."
+      "backendFirst": {
+        "title": "Backend odaklı",
+        "description": "Profesyonel çalışmalarımın merkezinde ASP.NET Core API'leri ve SQL Server veri katmanları bulunuyor."
       },
-      "learner": {
-        "title": "Sürekli Öğrenen",
-        "description": "Teknoloji sürekli gelişiyor ve ben de onunla birlikte gelişmeyi seviyorum. Yeni şeyler öğrenmek benim için bir tutku."
+      "systemDesign": {
+        "title": "Sistem tasarımı ve mimari",
+        "description": "Sistem tasarımı, mikroservisler ve yazılım mimarisi üzerine çalışıyor; bu yaklaşımları profesyonel ve bağımsız projelerimde uyguluyorum."
       },
-      "fullstack": {
-        "title": "Full-Stack Geliştirici",
-        "description": "Hem frontend hem de backend alanlarında tecrübeye sahibim. Bu, projelerime bütünsel bir yaklaşım getirmemi sağlıyor."
+
+      "independentSystems": {
+        "title": "Bağımsız mühendislik projeleri",
+        "description": "IAM, gerçek zamanlı platformlar ve observability araçları gibi backend ağırlıklı sistemleri bağımsız olarak tasarlayıp geliştiriyorum."
       },
-      "techStack": {
-        "title": "Çeşitli Teknoloji Yelpazesi",
-        "description": "React.js, Next.js, C#, ASP.NET Core, .NET Framework, Web API, NodeJS, T-SQL, Docker, ASP.NET MVC ve Flutter gibi çeşitli teknolojilerde deneyime sahibim."
-      },
-      "perspective": {
-        "title": "Çok Yönlü Bakış Açısı",
-        "description": "Sorunlara farklı açılardan yaklaşarak, alışılmışın dışında ve yaratıcı çözümler geliştirmeyi önemsiyorum."
-      },
-      "adaptable": {
-        "title": "Uyum Sağlayan",
-        "description": "Dinamik ortamlarda başarılı bir şekilde çalışıyor ve değişen gereksinimlere hızla uyum sağlıyorum. Bu esneklik, beklenmedik zorluklarla etkili bir şekilde başa çıkmamı sağlıyor."
+
+      "fullStackWhenNeeded": {
+        "title": "Gerektiğinde full-stack",
+        "description": "Projenin ihtiyacına göre React/Next.js ve Flutter ile frontend ve mobil geliştirme yapabiliyorum; ancak ana odağım backend geliştirme."
       }
     },
     "jobs": {
       "gelecek2025": {
         "title": "Gelecek Varlık Yönetimi",
         "role": "Yazılım Geliştirme Uzmanı",
-        "desc": "Şirket içi kritik yazılım sistemlerinin geliştirilmesi ve optimizasyonundan sorumluyum. Dış kullanıcılara yönelik web platformlarının tasarım, geliştirme ve güvenli deployment süreçlerini yönetiyorum. Veri tabanı yapılarını tasarlayıp kurumsal iş akışlarını destekleyen backend çözümleri sunuyorum. Ayrıca şirketin ilk mobil uygulamasının mimarisini oluşturup geliştirme sürecinde aktif rol oynuyorum."
+        "desc": [
+          "C#/.NET, ASP.NET Core, ASP.NET MVC ve SQL Server kullanarak iş açısından kritik kurumsal uygulamaların geliştirilmesi ve sürdürülebilirliği.",
+          "Kurum içi iş akışlarını ve dış kullanıcılara yönelik platformları destekleyen backend servisleri ve REST API'lerin geliştirilmesi.",
+          "Uygulamalar için veritabanı yapılarının tasarlanması ve T-SQL sorgularının geliştirilmesi.",
+          "Belirli kurum içi API'lerin dış istemcilere güvenli şekilde sunulabilmesi amacıyla C# ve YARP kullanarak reverse proxy çözümünün tasarlanması ve geliştirilmesi.",
+          "Şirket genelinde kullanılan structured logging kütüphanesinin (.NET Standard 2.0) ve kendi CI/CD'sinin geliştirilip Azure DevOps Artifacts'ta private NuGet feed olarak yayınlanması.",
+          "İstemci uygulamalarının aynı kütüphane üzerinden log göndermesini sağlayan bir Log Ingestion API'nin eklenmesi.",
+          "Ana veritabanındaki büyük hacimli dokümanların yol açtığı backup sorunlarının, dokümanların ayrı bir SQL Server veritabanına taşınıp erişimin yeni bir API üzerinden sağlanmasıyla çözülmesi.",
+          "Belirli doküman tiplerini OCR → PII → analiz sürecinden geçirip yapılandırılmış Excel/JSON çıktısına dönüştüren pipeline'ı geliştiren ekibe liderlik edilmesi; hukuk takip kontrollerini otomatikleştiriyor, sohbet tabanlı sorgu sonraki faz için planlanıyor.",
+          "Şirketin ilk mobil uygulamasının mimarisinin oluşturulması ve geliştirilmesinde mobil istemci ve backend servisleriyle birlikte aktif rol alınması.",
+          "Deployment, hata analizi, güvenlik ve mevcut uygulamaların modernizasyon süreçlerine katkı sağlanması."
+        ]
       },
       "gelecek2022": {
         "title": "Gelecek Varlık Yönetimi",
         "role": "Yazılım Geliştirme Uzman Yardımcısı",
-        "desc": "Şirket içerisinde kullanılan uygulamaların geliştirilmesi ve bakımından sorumluyum. Farklı teknolojiler kullanarak projeler geliştiriyorum. Geliştirmeler sırasında gerekli durumlarda veritabanı sorgularını yazıyorum."
+        "desc": [
+          "C#/.NET ve web teknolojileri kullanarak kurum içi iş uygulamalarının geliştirilmesi ve bakımında görev aldım.",
+          "İş gereksinimlerine göre uygulama özellikleri ve entegrasyonların geliştirilmesine katkı sağladım.",
+          "Uygulama veri erişimi ve iş akışları için SQL Server ve T-SQL kullandım."
+        ]
       },
       "patika": {
         "title": "Gelecek Varlık Yönetimi - Patika",
         "role": "Bootcamp Öğrencisi",
-        "desc": "Patika.dev platformunda verilen eğitimleri tamamladım ve bu süreçte yazılım geliştirme alanında temelleri öğrendim. Sonrasında mülakatları geçerek Gelecek Varlık Yönetimi'nde Junior Full Stack Developer olarak işe başladım."
+        "desc": [
+          "Patika.dev üzerinden yazılım geliştirme eğitimini tamamladıktan sonra Gelecek Varlık Yönetimi'nde Junior Full Stack Developer olarak çalışmaya başladım."
+        ]
       }
     }
   },
   "projects": {
     "title": "Projelerim",
-    "subtitle": "Öne çıkan projelerimden bazıları",
-    "inDevelopment": "Geliştiriliyor",
+    "subtitle": "Nasıl yazılım geliştirdiğimi yansıtan seçili projeler",
+    "inDevelopment": "Aktif Geliştiriliyor",
     "noImage": "Henüz görsel eklenmedi",
     "viewOnGithub": "GitHub'da Görüntüle",
     "viewProject": "Ziyaret Et",
@@ -79,58 +95,38 @@
     "showLess": "Daha Az",
     "items": {
       "yumasnap": {
-        "title": "YumaSnap - Etkinlik Fotoğraf Paylaşım Platformu",
-        "desc": "Etkinlikler ve düğün salonları için özel olarak geliştirilmiş gerçek zamanlı bir fotoğraf paylaşım platformu. Misafirler herhangi bir kayıt veya uygulama indirme gereksinimi duymadan, sadece etkinlikteki QR kodu okutarak hızlıca fotoğraf yükleyebilir ve paylaşabilirler."
+        "title": "YumaSnap — Etkinlik Fotoğraf Paylaşım Platformu",
+        "desc": "Etkinlikler ve düğün salonları için gerçek zamanlı bir fotoğraf paylaşım platformu. Misafirler hesap oluşturmadan veya uygulama indirmeden QR kodu tarayarak anında fotoğraf yükleyebiliyor. Supabase ve AWS S3 üzerindeki yükleme hattını ve yeni fotoğraflar geldikçe misafir galerilerini senkron tutan gerçek zamanlı katmanı tasarladım."
       },
       "YumaIdentity": {
-        "title": "YumaIdentity - IAM Servisi",
-        "desc": "Tam özellikli bir Identity and Access Management (IAM) servisi. Kullanıcı kimlik doğrulama, yetkilendirme, rol yönetimi ve güvenli token tabanlı oturum yönetimi sağlar. Modern full-stack mimarisiyle geliştirilmiş, ölçeklenebilir bir kimlik yönetim platformu."
+        "title": "YumaIdentity — IAM Servisi",
+        "desc": "Kendi uygulamalarım için bağımsız olarak tasarlayıp geliştirdiğim bir Identity and Access Management servisi. Kimlik doğrulama, rol tabanlı yetkilendirme ve multi-tenant erişim kontrolü sağlıyor; ASP.NET Core, EF Core, SQL Server, JWT ve OAuth 2.0 (PKCE) kullanıyor. API aktif olarak geliştiriliyor; yönetim arayüzü ise henüz geliştirme aşamasında."
       },
-      "dalle": {
-        "title": "Dall-E Klonu",
-        "desc": "OpenAI'ın DALL-E'sinden esinlenen bir yapay zeka görsel oluşturma uygulaması. Kullanıcılar MERN stack kullanarak metin komutlarına dayalı yapay zeka tarafından oluşturulan görselleri oluşturabilir ve paylaşabilir."
-      },
-      "airbnb": {
-        "title": "Airbnb Klonu",
-        "desc": "Airbnb web sitesinin bir klonu. Kullanıcılar mülkleri arayabilir, detayları görüntüleyebilir ve konaklama rezervasyonu yapabilir."
-      },
-      "twitter": {
-        "title": "Twitter Klonu",
-        "desc": "Twitter'ın modern bir klonu. Kullanıcılar tweet atabilir, diğer kullanıcıları takip edebilir ve etkileşimde bulunabilir. Next.js ve TypeScript kullanılarak geliştirilmiş tam özellikli bir sosyal medya uygulaması."
-      },
-      "aiPrompt": {
-        "title": "AI Prompt Uygulaması",
-        "desc": "Kullanıcıların yapay zeka promptlarını oluşturup paylaşabilecekleri bir platform. Kullanıcılar kendi promptlarını kaydedebilir, başkalarının promptlarını keşfedebilir ve etkileşimde bulunabilir. Next.js ve modern kimlik doğrulama yöntemleri kullanılarak geliştirilmiştir."
-      },
-      "pokemon": {
-        "title": "Mobile Pokemon App",
-        "desc": "PokeAPI kullanarak clean architecture ilkelerine göre geliştirilen bir Flutter projesi. Özellikler arasında Pokémon'u getirme ve görüntüleme, ayrıntılı bilgileri görüntüleme, ada göre arama ve mobil ve web için duyarlı tasarım yer alır. Modülerlik ve sürdürülebilirlik için feature-first bir mimari ile düzenlenmiştir."
-      },
-      "habit": {
-        "title": "Habit Tracker App",
-        "desc": "Temiz, modern bir kullanıcı arayüzü ve güçlü özelliklerle kullanıcıların alışkanlıklarını takip etmelerine ve sürdürmelerine yardımcı olan bir Flutter uygulaması."
+      "yumalog": {
+        "title": "YumaLog — .NET için Yapılandırılmış Loglama ve Observability",
+        "desc": ".NET Framework ve modern .NET uygulamalarında tutarlı bir loglama yaklaşımı sağlamak için geliştirdiğim structured logging kütüphanesi. Log olaylarını asenkron olarak buffer'lıyor, uygulama bazında structured JSON formatında yazıyor ve Grafana Alloy tarafından toplanıp Loki üzerinden Grafana'da sorgulanacak şekilde tasarlandı. NuGet paketi olarak dağıtılıyor; test suite'i ve yapılandırılabilir buffer, retention ve diagnostics özellikleri bulunuyor."
       }
     }
   },
   "skills": {
     "title": "Yeteneklerim",
-    "subtitle": "Çalıştığım teknolojiler ve araçlar",
-    "categories": {
-      "frontend": "Frontend Geliştirme",
-      "backend": "Backend Geliştirme",
-      "tools": "Araçlar ve Metodolojiler",
-      "other": "Diğer Yetenekler"
+    "subtitle": "Önce backend — odak ve derinliğe göre sıralı",
+    "intro": "Ana odak: C#/.NET backend geliştirme, SQL Server ve sistem tasarımı. Geri kalanı bunu destekliyor; bir projenin ihtiyacına göre yaptığım frontend ve mobil geliştirmeler dahil.",
+    "tiers": {
+      "primary": "Ana Odak",
+      "secondary": "Ayrıca Çalıştığım",
+      "supporting": "Destekleyici Beceriler"
     }
   },
   "certificates": {
-    "title": "Sertifikalar",
-    "subtitle": "Aldığım eğitimler ve başarılar",
+    "title": "Güncel Odak",
+    "subtitle": "2025 yılında tamamladığım yazılım mimarisi ve mikroservisler eğitimleri",
     "viewCertificate": "Sertifikayı Görüntüle",
     "viewAllCertificates": "Tüm Sertifikaları Gör"
   },
   "footer": {
     "aboutTitle": "Hakkımda",
-    "aboutDesc": "Modern teknolojilerle yenilikçi ve sürdürülebilir çözümler geliştiren, detaylara önem veren bir Full Stack Developer’ım.",
+    "aboutDesc": "C#, .NET ve SQL Server üzerine backend odaklı çalışan; sistem tasarımı ve yazılım mimarisine doğru derinleşen bir yazılım mühendisi.",
     "linksTitle": "Hızlı Bağlantılar",
     "contactTitle": "Benimle İletişime Geç",
     "email": "E-posta",
@@ -138,7 +134,7 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Bloguma hoşgeldiniz! Bu alanda yazılım geliştirme alanında edindiğim yeni bilgiler, yazılım geliştirme ile ilgili düşüncelerim ve yazılım geliştirme ile ilgili fikirlerimi paylaşacağım.",
+    "subtitle": ".NET, backend geliştirme, sistem tasarımı ve yazılım mimarisi üzerine teknik notlarım.",
     "back": "Geri Dön",
     "readTime": "Okuma süresi",
     "notFound": "Blog Bulunamadı"
