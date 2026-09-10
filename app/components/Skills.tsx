@@ -1,7 +1,9 @@
 'use client';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { useState } from 'react';
 import { m } from 'framer-motion';
+import { FiChevronDown } from 'react-icons/fi';
 import { SectionContainer } from './shared/SectionContainer';
 import { SectionHeader } from './shared/SectionHeader';
 import { MotionContainer, motionItem } from './shared/MotionContainer';
@@ -9,6 +11,7 @@ import { skillTiers } from '../data/skills';
 import { useDictionary } from '../context/DictionaryContext';
 
 const tierOrder = ['primary', 'secondary', 'supporting'] as const;
+const VISIBLE_SKILLS = 8;
 
 const tierStyles = {
   primary: {
@@ -33,6 +36,19 @@ const tierStyles = {
 
 export const Skills = () => {
   const dict = useDictionary();
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+
+  const toggleExpanded = (tier: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(tier)) {
+        next.delete(tier);
+      } else {
+        next.add(tier);
+      }
+      return next;
+    });
+  };
 
   return (
     <SectionContainer id='skills'>
@@ -46,6 +62,14 @@ export const Skills = () => {
         <div className='space-y-6'>
           {tierOrder.map((tier) => {
             const styles = tierStyles[tier];
+            const allSkills = skillTiers[tier];
+            const hasMore = allSkills.length > VISIBLE_SKILLS;
+            const isExpanded = expanded.has(tier);
+            const visibleSkills =
+              hasMore && !isExpanded
+                ? allSkills.slice(0, VISIBLE_SKILLS)
+                : allSkills;
+
             return (
               <m.div
                 key={tier}
@@ -56,7 +80,7 @@ export const Skills = () => {
                   {dict.skills.tiers[tier as keyof typeof dict.skills.tiers]}
                 </h3>
                 <div className='flex flex-wrap gap-3'>
-                  {skillTiers[tier].map((skill) => (
+                  {visibleSkills.map((skill) => (
                     <div
                       key={skill.name}
                       className={`group flex items-center gap-2 px-3 py-2 rounded-lg border transition-colors ${styles.pill}`}
@@ -66,6 +90,26 @@ export const Skills = () => {
                     </div>
                   ))}
                 </div>
+
+                {hasMore && (
+                  <button
+                    onClick={() => toggleExpanded(tier)}
+                    className='inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/10 hover:bg-primary/20 hover:border-primary/30 text-xs font-semibold text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
+                    aria-label={
+                      isExpanded ? dict.about.showLess : dict.about.showMore
+                    }
+                  >
+                    <span>
+                      {isExpanded ? dict.about.showLess : dict.about.showMore}
+                    </span>
+                    <m.span
+                      animate={{ rotate: isExpanded ? 180 : 0 }}
+                      transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                    >
+                      <FiChevronDown className='w-3.5 h-3.5' />
+                    </m.span>
+                  </button>
+                )}
               </m.div>
             );
           })}

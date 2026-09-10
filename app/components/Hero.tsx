@@ -60,7 +60,7 @@ export const Hero = () => {
               className='text-center lg:text-left space-y-6'
             >
               <div>
-                <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight'>
+                <h1 className='font-mono text-3xl md:text-4xl lg:text-5xl font-bold tracking-normal'>
                   {dict.hero.greeting}{' '}
                   <span className='text-primary'>Adylsha Yumayev</span>
                 </h1>
@@ -75,7 +75,7 @@ export const Hero = () => {
 
               <div className='flex flex-wrap gap-4 justify-center lg:justify-start'>
                 <button
-                  className='px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition backdrop-blur-sm'
+                  className='px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                   onClick={handleProjectsClick}
                   onKeyDown={handleKeyProjectsNavigation}
                   aria-label={dict.hero.viewProjects}
@@ -84,7 +84,7 @@ export const Hero = () => {
                   {dict.hero.viewProjects}
                 </button>
                 <button
-                  className='px-6 py-3 rounded-lg border-primary border-solid border-2'
+                  className='px-6 py-3 rounded-lg border-primary border-solid border-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                   onClick={handleContactClick}
                   onKeyDown={handleKeyContactNavigation}
                   aria-label={dict.hero.contactMe}
@@ -117,7 +117,7 @@ export const Hero = () => {
       </SectionContainer>
 
       <button
-        className='absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce'
+        className='absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
         onClick={handleScrollToProjects}
         aria-label='Scroll Down'
         tabIndex={0}

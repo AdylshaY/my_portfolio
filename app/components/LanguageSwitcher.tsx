@@ -38,7 +38,7 @@ export default function LanguageSwitcher() {
     return (
         <button
             onClick={toggleLanguage}
-            className="ml-4 px-3 py-1 rounded-full border border-primary/20 hover:border-primary/50 text-sm font-medium transition-colors flex items-center gap-2"
+            className="ml-4 px-3 py-1 rounded-full border border-primary/20 hover:border-primary/50 text-sm font-medium transition-colors flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             aria-label="Switch Language"
         >
             <span className={currentLang === 'tr' ? 'text-primary font-bold' : 'text-muted-foreground'}>TR</span>

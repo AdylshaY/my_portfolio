@@ -22,9 +22,9 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
             <div className='flex items-center space-x-4'>
               <Link
                 href='/'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
               >
-                <span className='text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25'>
+                <span className='font-mono text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25'>
                   AY
                 </span>
               </Link>
@@ -33,35 +33,35 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
             <div className='flex items-center space-x-6'>
               <Link
                 href='https://medium.com/@adylshay'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 target='_blank'
               >
                 <FaMedium className='text-2xl' />
               </Link>
               <Link
                 href='https://www.youtube.com/@AdylshasDevLab'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 target='_blank'
               >
                 <FaYoutube className='text-2xl' />
               </Link>
               <Link
                 href='https://www.linkedin.com/in/adylshay'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 target='_blank'
               >
                 <FaLinkedin className='text-2xl' />
               </Link>
               <Link
                 href='https://github.com/adylshay'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 target='_blank'
               >
                 <FaGithub className='text-2xl' />
               </Link>
               <Link
                 href='https://x.com/adylshay'
-                className='text-foreground hover:text-primary transition-colors'
+                className='text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 target='_blank'
               >
                 <FaXTwitter className='text-2xl' />

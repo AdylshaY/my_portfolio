@@ -122,7 +122,7 @@ export function CardGrid<T>({
               {showScrollHint && (
                 <button
                   onClick={scrollToNextCard}
-                  className='absolute top-1/2 right-4 -translate-y-1/2 md:hidden animate-bounce cursor-pointer'
+                  className='absolute top-1/2 right-4 -translate-y-1/2 md:hidden animate-bounce cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                   aria-label='Scroll to next card'
                 >
                   <div className='bg-primary/90 text-primary-foreground rounded-full p-2 shadow-lg backdrop-blur-sm hover:bg-primary transition-colors'>
@@ -152,7 +152,7 @@ export function CardGrid<T>({
                     currentIndex === index
                       ? 'w-8 h-2 bg-primary'
                       : 'w-2 h-2 bg-muted-foreground/30 hover:bg-muted-foreground/50'
-                  } rounded-full`}
+                  } rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background`}
                   aria-label={`Go to item ${index + 1}`}
                 />
               ))}
@@ -173,7 +173,7 @@ export function CardGrid<T>({
               href={actionButton.href}
               target='_blank'
               rel='noopener noreferrer'
-              className='inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300 shadow-lg hover:shadow-xl font-medium group'
+              className='inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300 shadow-lg hover:shadow-xl font-medium group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
             >
               {actionButton.text}
               <span className='transition-transform group-hover:translate-x-1'>

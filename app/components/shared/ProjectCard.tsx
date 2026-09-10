@@ -87,7 +87,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       {/* Project Content */}
       <div className='p-6 flex flex-col flex-1'>
         <div className='flex-1'>
-          <h3 className='text-xl font-semibold mb-2 text-justify'>
+          <h3 className='text-xl font-semibold mb-2 text-left'>
             {project.title}
           </h3>
           <div className='mb-4'>
@@ -104,7 +104,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             >
               <p
                 ref={contentRef}
-                className='text-muted-foreground text-justify'
+                className='text-muted-foreground text-left'
               >
                 {project.description}
               </p>
@@ -118,7 +118,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               {project.description.length > 150 && (
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className='inline-flex items-center gap-1 text-sm text-primary hover:text-primary/80 transition-colors'
+                  className='inline-flex items-center gap-1 text-sm text-primary hover:text-primary/80 transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                   aria-label={isExpanded ? showLessText : showMoreText}
                 >
                   <span>{isExpanded ? showLessText : showMoreText}</span>
@@ -153,7 +153,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               href={project.liveUrl}
               target='_blank'
               rel='noopener noreferrer'
-              className='flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300'
+              className='flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105 duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
               aria-label={`${dict.projects.viewProject}: ${project.title}`}
             >
               <FiExternalLink className='w-5 h-5' />
@@ -165,7 +165,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               href={project.githubUrl}
               target='_blank'
               rel='noopener noreferrer'
-              className={`flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg transition-all hover:scale-105 duration-300 ${
+              className={`flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-lg transition-all hover:scale-105 duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                 project.liveUrl
                   ? 'border-2 border-primary text-primary hover:bg-primary/10'
                   : 'bg-primary text-primary-foreground hover:bg-primary/90'
