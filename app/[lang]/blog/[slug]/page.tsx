@@ -59,7 +59,7 @@ export default async function Page({
       <div className='mb-8'>
         <Link
           href='/blog'
-          className='flex items-center gap-2 text-primary hover:text-primary/80 transition-colors duration-300'
+          className='flex items-center gap-2 text-primary hover:text-primary/80 transition-colors duration-300 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -175,7 +175,7 @@ export default async function Page({
               );
             },
             a: ({ href, children }) => (
-              <a href={href} className='text-primary hover:text-primary/80 underline decoration-primary/30 underline-offset-4 transition-colors font-medium' target="_blank" rel="noopener noreferrer">{children}</a>
+              <a href={href} className='text-primary hover:text-primary/80 underline decoration-primary/30 underline-offset-4 transition-colors font-medium rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background' target="_blank" rel="noopener noreferrer">{children}</a>
             ),
             hr: () => <hr className='my-12 border-border' />,
           }}

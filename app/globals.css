@@ -125,6 +125,76 @@
   will-change: transform;
 }
 
+@keyframes log-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-log-scroll {
+  animation: log-scroll 34s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scan-sweep {
+
+  0%,
+  100% {
+    top: -2%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    top: 100%;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}
+
+.animate-scan-sweep {
+  animation: scan-sweep 8s ease-in-out infinite;
+  will-change: top, opacity;
+}
+
+/*
+ * These loops (the hero's log-stream and scan-sweep especially) run
+ * continuously with no way to pause them, which is both a vestibular
+ * trigger for motion-sensitive visitors and a WCAG 2.2.2 concern for
+ * any single loop lasting more than 5s. Stop them outright rather than
+ * merely slowing them down: none of this motion carries information a
+ * visitor needs, so removing it loses nothing. `animate-bounce` and
+ * `animate-pulse` are Tailwind's own utility classes, overridden here
+ * rather than per-component so every current and future use is covered
+ * by one rule.
+ */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-bounce,
+  .animate-pulse,
+  .animate-blob,
+  .animate-blob2,
+  .animate-log-scroll {
+    animation: none !important;
+  }
+
+  /* The sweep line only means anything while moving; freezing it mid-frame
+     would leave a stray, unexplained line, so hide it instead. */
+  .animate-scan-sweep {
+    animation: none !important;
+    opacity: 0;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

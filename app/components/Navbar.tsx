@@ -71,14 +71,14 @@ export const Navbar = () => {
             {/* Logo */}
             <Link
               href='/'
-              className='flex items-center'
+              className='flex items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
               aria-label='Homepage'
               tabIndex={0}
             >
               <m.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                className='text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25'
+                className='font-mono text-2xl font-bold bg-primary text-primary-foreground px-3 py-1 rounded-lg shadow-lg shadow-primary/25'
               >
                 AY
               </m.div>
@@ -94,7 +94,7 @@ export const Navbar = () => {
                   key={item.href}
                   href={item.isRoute ? item.href : `#${item.href}`}
                   onClick={(e) => handleLinkClick(e, item)}
-                  className='text-foreground hover:text-primary transition-colors duration-200 relative group'
+                  className='text-foreground hover:text-primary transition-colors duration-200 relative group rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 >
                   {item.name}
                   <span className='absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full' />
@@ -107,7 +107,7 @@ export const Navbar = () => {
             <div className='flex md:hidden items-center gap-4'>
               <LanguageSwitcher />
               <button
-                className='p-2 text-foreground hover:text-primary transition-colors'
+                className='p-2 text-foreground hover:text-primary transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label='Toggle menu'
                 aria-expanded={isOpen}
@@ -146,7 +146,7 @@ export const Navbar = () => {
                   key={item.href}
                   href={item.isRoute ? item.href : `#${item.href}`}
                   onClick={(e) => handleLinkClick(e, item)}
-                  className='block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200'
+                  className='block py-2 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-200 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
                 >
                   {item.name}
                 </Link>
