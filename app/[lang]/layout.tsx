@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Inter } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import '../globals.css';
 import { FramerMotionProvider } from '../components/shared/FramerMotionProvider';
 import { Footer } from '../components/Footer';
@@ -9,7 +9,16 @@ import { getDictionary } from '../utils/get-dictionary';
 import { DictionaryProvider } from '../context/DictionaryContext';
 import { socialLinks } from '../data/social';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+// JetBrains Mono: chosen as the display/heading face because JetBrains
+// builds Rider/ReSharper, the .NET tooling this engineer's day job runs
+// on — a specific reason tied to this person, not a generic "code font"
+// choice. Reserved for H1/H2 and the logo mark only; body stays Inter.
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-mono-display',
+});
 
 const SITE_URL = 'https://yumayev.dev';
 
@@ -94,7 +103,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
         <DictionaryProvider dict={dict}>
           <FramerMotionProvider>{children}</FramerMotionProvider>
           <Footer />

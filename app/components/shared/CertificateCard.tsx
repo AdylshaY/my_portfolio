@@ -69,7 +69,7 @@ export const CertificateCard = ({ certificate }: CertificateCardProps) => {
               href={certificate.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='inline-flex items-center text-sm font-medium text-primary hover:underline gap-2'
+              className='inline-flex items-center text-sm font-medium text-primary hover:underline gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background'
             >
               {viewCertificateBtnText}
               <FaExternalLinkAlt className='w-3 h-3' />

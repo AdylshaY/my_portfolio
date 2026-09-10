@@ -7,6 +7,7 @@ export const SectionHeader = ({
   title,
   subtitle,
   className = '',
+  id,
 }: SectionHeaderProps) => {
   return (
     <m.div
@@ -15,7 +16,10 @@ export const SectionHeader = ({
       viewport={{ once: true }}
       className={`text-center mb-12 ${className}`}
     >
-      <h2 className='text-3xl font-bold tracking-tight sm:text-4xl mb-4'>
+      <h2
+        id={id}
+        className='font-mono text-3xl font-bold tracking-normal sm:text-4xl mb-4'
+      >
         {title}
       </h2>
       {subtitle && (
